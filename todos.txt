@@ -1,0 +1,15 @@
+A Personal Portfolio: SECTIONS: 
+1. Header
+2. Hero
+3. About
+4. Experience
+5. Skill
+6. Portfolio work
+7. Contact
+8. Footer 
+
+................................................
+
+> crate a react app: DONE
+> setup: DONE
+> 

@@ -1,6 +1,6 @@
 A Personal Portfolio: SECTIONS: 
-1. Header
-2. Hero
+1. Header: DONE
+2. Hero: DONE
 3. About
 4. Experience
 5. Skill
@@ -12,4 +12,7 @@ A Personal Portfolio: SECTIONS:
 
 > crate a react app: DONE
 > setup: DONE
-> 
+> Bootstrap : DONE
+> React Bootstrap: DONE
+> Font AWesome : DONE
+> AOS: DONE

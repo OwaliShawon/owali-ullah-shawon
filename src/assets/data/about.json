@@ -1,0 +1,38 @@
+{
+	"resumeLink": "https://drive.google.com/file/d/12TxQOPu1uOLvZvgSQLcJANT7NOPZvbYK/view?usp=sharing",
+	"profile": [
+		{
+			"name": "Owali Ullah Shawon",
+			"aboutTitle": "ABOUT ME",
+			"aboutSubTitle": "Front-End Web Developer",
+			"aboutDescription": "Services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.",
+			"birthDay": "20 December 1997",
+			"Residence": "Bangldesh",
+			"Address": "Jatrabari, Dhaka",
+			"Email": "owali.shawon@gmail.com",
+			"Phone": "+880 1842320960",
+			"github": "https://github.com/OwaliShawon",
+			"linkedin": "https://www.linkedin.com/in/owalishawon/",
+			"facebook": "https://www.facebook.com/owalishawon",
+			"twitter": "https://twitter.com/owalishawon"
+		}
+	],
+	"count": [
+		{
+			"Title": "Happy Clients",
+			"count": "5"
+		},
+		{
+			"Title": "Project Completed",
+			"count": "13"
+		},
+		{
+			"Title": "Tea/Coffee Cup",
+			"count": "50"
+		},
+		{
+			"Title": "Line of Code",
+			"count": "1456"
+		}
+	]
+}

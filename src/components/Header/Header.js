@@ -1,9 +1,9 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import profiledata from "../../assets/data/about.json";
 import "./Header.css";
 
 const Header = () => {
-    const resumeLink = "https://drive.google.com/file/d/12TxQOPu1uOLvZvgSQLcJANT7NOPZvbYK/view?usp=sharing";
     return (
         <Navbar expand="lg" className="shadow bg-dark-blue py-3" sticky="top">
             <div className="container">
@@ -35,7 +35,7 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <a
-                                href={resumeLink}
+                                href={profiledata.resumeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-outline-primary btn-download text-white my-3 my-sm-0"

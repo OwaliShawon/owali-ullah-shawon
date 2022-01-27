@@ -1,3 +1,8 @@
+Color Used: 
+#111a28, main bg
+#212F3D, footer bg
+blue
+................................................
 A Personal Portfolio: SECTIONS: 
 1. Header: DONE
 2. Hero: DONE

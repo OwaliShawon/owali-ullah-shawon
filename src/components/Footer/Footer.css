@@ -1,0 +1,27 @@
+.main-menu{
+    height: 5%;
+}
+.sub-menu{
+    background-color: #212F3D;
+    padding-top: 1em;
+    justify-content: space-around;
+}
+
+.justify-content-end{
+    display:  flex;
+    justify-content: end;
+}
+.logo-upper{
+    padding: .5em;
+    padding-top: .7em;
+    text-align: center;
+}
+
+.address{
+    color: white;
+    text-decoration: none;
+}
+
+.address:hover{
+    color: blue;
+}

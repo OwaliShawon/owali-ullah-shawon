@@ -1,0 +1,11 @@
+{
+	"experience": [
+		{
+			"year": "November 2021 - Present",
+			"companyName": "Intigsol Ltd.",
+			"role1": "Developed user interfaces with modern JavaScript frameworks, HTML5, and CSS3, which improved user satisfaction",
+			"role2": "Building, testing, maintaining and supporting large applications",
+			"role3": "Worked as part of a 4-person team,communicated in a professional way and Built API following RESTful standards to allow users to submit information by storing data in MongoDB"
+		}
+	]
+}

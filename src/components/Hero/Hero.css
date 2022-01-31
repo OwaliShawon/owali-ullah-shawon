@@ -10,7 +10,7 @@
 
   .social-title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     }
 
   .title p {
@@ -21,36 +21,27 @@
     font-weight: 900;
     text-transform: uppercase;
     background-color: #1d293a;
-    transform-origin: 50%;
+    transform-origin: 30%;
     border-radius: 4px;
-    margin: 0px -40px;
-    margin-bottom: 15px;
+    margin: 0px -45px;
+    margin-top: 320px;
   }
 
   .intro-content.ml-5 {
     padding-left: 10%;
   }
   .welcome-title{
-    font-size: 20px;
+   font-size: 1vw;
   }
 
-  .intro-content h1 {
-    font-size: 72px;
+  .welcome-title h1{
+    font-size: 4vw;
     line-height: 85px;
     font-weight: 700;
     letter-spacing: 2px;
     margin: 0px auto 25px;
     color: #fff;
     text-transform: uppercase;
-    
-  }
-
-  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    .intro-content h1 {
-      font-size: 20px;
-      line-height: 5px;
-    }
   }
 
   .designation-list {
@@ -61,6 +52,7 @@
     list-style: none;
     margin: 0 21px;
     display: inline-block;
+    font-size: 1vw;
   }
   
   .designation-list ul {
@@ -77,4 +69,11 @@
     background-color: blue;
   }
 
-  
+  @media (max-width: 600px) {
+    .welcome-title {
+      font-size: 3vw;
+     }
+     .designation-list ul li {
+       font-size: 3vw;
+     }
+    }

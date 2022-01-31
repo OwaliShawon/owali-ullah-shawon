@@ -5,12 +5,12 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <Navbar expand="lg" className="shadow bg-dark-blue py-3" sticky="top">
+        <Navbar expand="lg" className="shadow navbar py-3" sticky="top">
             <div className="container">
                 <Navbar.Brand href="#home" className="logo">
-                    <span className="logo-icon text-white">Owali Ullah Shawon</span>
+                    <span className="logo-icon text-white"></span>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className='bg-primary' />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="navbar-nav ms-auto">
                         <li className="nav-item">

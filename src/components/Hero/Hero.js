@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="hero-body">
                     <div data-aos="fade-down" className="social-title title">
                         <Social></Social>
-                        <p>Follow me</p>
+                        <p>Connect Me</p>
                     </div>
 
                     <div className="intro-content ml-5">

@@ -2,15 +2,16 @@
     margin: 5px 15px;
     padding: 5px;
   }
-  .navbar-toggler {
-    background-color: blue !important;
-  }
 
   .logo {
-    background-image: url(../../assets/images/blob.svg);
+    background-image: url(../../assets/images/portfolioicon.png);
     background-size: cover;
     background-position: center;
-    height: 64px;
+    height: 80px;
     width: 100px;
     background-position: right 70% top 30%;
+  }
+
+  .navbar{
+    background-color: #111a28;
   }

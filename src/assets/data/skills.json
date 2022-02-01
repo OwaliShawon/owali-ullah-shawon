@@ -1,0 +1,110 @@
+{
+	"Web": [
+		{
+			"name": "HTML",
+			"percent": 90
+		},
+		{
+			"name": "CSS3",
+			"percent": 85
+		},
+		{
+			"name": "JavaScript",
+			"percent": 70
+		},
+		{
+			"name": "React",
+			"percent": 50
+		},
+		{
+			"name": "Node JS",
+			"percent": 55
+		},
+		{
+			"name": "Express JS",
+			"percent": 40
+		},
+		{
+			"name": "Sass",
+			"percent": 50
+		},
+		{
+			"name": "MySQL",
+			"percent": 25
+		},
+		{
+			"name": "MongoDB",
+			"percent": 50
+		}
+	],
+	"Programming": [
+		{
+			"name": "JavaScript",
+			"percent": 70
+		},
+		{
+			"name": "Java",
+			"percent": 50
+		},
+		{
+			"name": "C",
+			"percent": 40
+		}
+	],
+	"LibraryOrFramework": [
+		{
+			"name": "Bootstrap",
+			"percent": 70
+		},
+		{
+			"name": "Foundation",
+			"percent": 0
+		},
+		{
+			"name": "MAterial UI",
+			"percent": 50
+		},
+		{
+			"name": "Tailwind CSS",
+			"percent": 50
+		}
+	],
+	"Tools": [
+		{
+			"name": "Git",
+			"percent": 90
+		},
+		{
+			"name": "GitHub",
+			"percent": 35
+		},
+		{
+			"name": "VS-Code",
+			"percent": 50
+		},
+		{
+			"name": "Chorme Dev Tool",
+			"percent": 50
+		},
+		{
+			"name": "Heroku",
+			"percent": 50
+		},
+		{
+			"name": "Firebase",
+			"percent": 50
+		},
+		{
+			"name": "Netlify",
+			"percent": 50
+		},
+		{
+			"name": "Figma",
+			"percent": 60
+		},
+		{
+			"name": "Canva",
+			"percent": 40
+		}
+	]
+}

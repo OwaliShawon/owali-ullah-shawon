@@ -21,3 +21,6 @@ A Personal Portfolio: SECTIONS:
 > React Bootstrap: DONE
 > Font AWesome : DONE
 > AOS: DONE
+
+
+ 

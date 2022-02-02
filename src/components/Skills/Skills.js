@@ -29,6 +29,7 @@ const Skills = () => {
                 <div className="section-title-text mb-2">
                     <h1 className="dark-color">MY Skill</h1>
                 </div>
+                {/* skills section */}
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab" aria-controls="pills-web" aria-selected="true">Web</a>
@@ -43,11 +44,10 @@ const Skills = () => {
                         <a class="nav-link" id="pills-tool-tab" data-toggle="pill" href="#pills-tool" role="tab" aria-controls="pills-tool" aria-selected="false">Tool</a>
                     </li>
                 </ul>
-
+                {/* skills items */}
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
                         <div className="row">
-
                             {
                                 skill.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }

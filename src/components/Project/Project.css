@@ -1,0 +1,42 @@
+.project .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #ffffff;
+  background-color: blue;
+}
+.project .nav-pills .nav-link {
+  border-radius: .25rem;
+  border: 1px solid blue;
+  color: #ffffff;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+.project .nav-link {
+  display: block;
+  padding: 0.6rem 1rem;
+}
+
+.project-details .links {
+    margin: 3px -36px;
+  }
+  
+  .project-details .links ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  .project-details .card-title {
+      color: blue;
+  }
+  .project-details a{
+    text-decoration: none;
+  }
+  .tool-list {
+    margin: 3px -36px;
+  }
+  
+  .tool-list ul li {
+    display: inline;
+    list-style: circle;
+    margin-right: 15px;
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Experience from '../../components/Experience/Experience';
 import Footer from '../../components/Footer/Footer';
+import Project from '../../components/Project/Project';
 import Skills from '../../components/Skills/Skills';
 import About from './../../components/About/About';
 import Header from './../../components/Header/Header';
@@ -14,6 +15,7 @@ const Home = () => {
             <About></About>
             <Skills></Skills>
             <Experience></Experience>
+            <Project></Project>
             <Footer></Footer>
         </div>
     );

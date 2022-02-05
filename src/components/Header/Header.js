@@ -15,12 +15,12 @@ const Header = () => {
                     <Nav className="navbar-nav ms-auto">
                         {/* navbar pages */}
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="/">
+                            <a className="nav-link text-white" activeClassName="active" href="/">
                                 Home
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="/about">
+                            <a className="nav-link text-white" activeClassName="active" href="/about">
                                 About
                             </a>
                         </li>

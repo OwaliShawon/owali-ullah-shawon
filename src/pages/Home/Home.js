@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../../components/ContactForm/ContactForm';
 import Experience from '../../components/Experience/Experience';
 import Project from '../../components/Project/Project';
 import Skills from '../../components/Skills/Skills';
@@ -14,6 +15,7 @@ const HomePage = () => {
             <Skills></Skills>
             <Experience></Experience>
             <Project></Project>
+            <Contact></Contact>
             {/* <Footer></Footer> */}
         </div>
     );

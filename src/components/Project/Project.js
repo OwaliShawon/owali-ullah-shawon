@@ -20,7 +20,7 @@ const Project = () => {
         <section data-Aos="fade-up" className="project section" id="project">
             <div className="container">
                 <div className="section-title-text mb-2">
-                    <h1 className="dark-color">Projects</h1>
+                    <h1 className="dark-color">Some Projects </h1>
                 </div>
                 {/* catagories of projects section */}
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">

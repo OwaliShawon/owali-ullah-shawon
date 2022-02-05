@@ -18,9 +18,9 @@ const Footer = () => {
                         </address>
                     </Col> */}
 
-                    <Col md="6" className=''>Designed & Built by<a className="address text-info" href='https://github.com/OwaliShawon'> Owali Ullah Shawon</a></Col>
+                    <Col md="12" className=''>Designed & Built by<a className="address text-info" href='https://github.com/OwaliShawon'> Owali Ullah Shawon</a></Col>
 
-                    <Col md="6" className=''>
+                    <Col md="12" className=''>
                         <a href="#" className="address"><FontAwesomeIcon icon={faFacebook} /></a>
                         &nbsp; &nbsp;
                         <a href="#" className="address"><FontAwesomeIcon icon={faTwitter} /></a>

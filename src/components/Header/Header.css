@@ -2,12 +2,10 @@
     margin: 0px 10px;
     padding: 5px;
   }
-  .navbar-nav a:active{
-    border-top: 1px solid aqua;
-  }
   .navbar-nav a:hover{
     color: aqua !important;
-  }
+    border-top: 1px solid aqua;
+  } 
   .logo {
     background-image: url(../../assets/images/portfolioicon.png);
     background-size: cover;

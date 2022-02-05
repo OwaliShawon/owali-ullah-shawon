@@ -50,7 +50,7 @@ body {
 
 .section-title-text h1 {
   position: relative;
-  background: linear-gradient(to right, #ffffff, #141E30, #0f0c29);
+  background: linear-gradient(to right, #ffffff, #2a3b5a, #e5e5e9);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

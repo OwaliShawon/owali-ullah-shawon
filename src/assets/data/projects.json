@@ -1,9 +1,10 @@
 {
 	"React": [
 		{
-			"name": "lorem title",
+			"type": "React",
+			"name": "lorem title is here aaskldfj alskdjf",
 			"image": "",
-			"description": "lorem ipusm",
+			"description": "lorem ipusm description will be written here. lorem ipusm description will be written here.",
 			"demo": "",
 			"source": "",
 			"tools1": "ReactJS",
@@ -11,26 +12,26 @@
 			"tools3": "Firebase"
 		},
 		{
-			"type": "featured",
-			"name": "",
+			"type": "React",
+			"name": "lorem title is here aaskldfj alskdjf",
 			"image": "",
-			"description": "",
+			"description": "lorem ipusm description will be written here. lorem ipusm description will be written here.",
 			"demo": "",
 			"source": "",
 			"tools1": "ReactJS",
-			"tools2": "Bootstrap",
-			"tools3": "NodeJS"
+			"tools2": "Tailwind CSS",
+			"tools3": "Firebase"
 		},
 		{
-			"type": "featured",
-			"name": "",
+			"type": "React",
+			"name": "lorem title is here aaskldfj alskdjf",
 			"image": "",
-			"description": "",
+			"description": "lorem ipusm description will be written here. lorem ipusm description will be written here.",
 			"demo": "",
 			"source": "",
-			"tools1": "HTML5",
-			"tools2": "Bootstrap",
-			"tools3": "Javascript"
+			"tools1": "ReactJS",
+			"tools2": "Tailwind CSS",
+			"tools3": "Firebase"
 		},
 		{
 			"type": "featured",

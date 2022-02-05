@@ -52,6 +52,7 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {/* image portion */}
                                 <div data-aos="fade-left" className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div className="about-avatar">
                                         <img src={profile} title="" alt="" />
@@ -64,7 +65,7 @@ const About = () => {
                 }
 
                 {/* counter */}
-                <div data-aos="fade-up" className="counter">
+                {/* <div data-aos="fade-up" className="counter">
                     <div className="row">
                         {
                             count.map(counter => {
@@ -79,7 +80,7 @@ const About = () => {
                             })
                         }
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

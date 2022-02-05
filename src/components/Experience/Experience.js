@@ -24,10 +24,10 @@ const Experience = () => {
                         experienceData.map(infoData => {
                             return (
                                 <div className="col-md-6 mt-3">
-                                    <div className="card  experience-card p-3">
+                                    <div className="card experience-card p-3 bg-dark">
                                         <div className="card-body">
-                                            <p class="card-text">{infoData.year}</p>
-                                            <h5 class="card-title text-white ">{infoData.companyName}</h5>
+                                            <p class="card-text text-success">{infoData.year}</p>
+                                            <h5 class="card-title text-info">{infoData.companyName}</h5>
                                             <ul>
                                                 <li>{infoData.role1}</li>
                                                 <li>{infoData.role2}</li>

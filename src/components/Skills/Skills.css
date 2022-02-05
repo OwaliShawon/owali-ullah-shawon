@@ -1,13 +1,13 @@
 .skill .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link{
-  color: #ffffff;
-  background-color: blue;
+  color: black;
+  background-color: aqua;
 }
 
 .skill .nav-pills .nav-link {
   border-radius: .25rem;
-  border: 1px solid blue;
-  color: #ffffff;
+  border: 1px solid aqua;
+  color: white;
   margin-right: 15px;
   margin-bottom: 15px;
 }
@@ -16,3 +16,4 @@
   display: block;
   padding: 0.6rem 1rem;
 }
+

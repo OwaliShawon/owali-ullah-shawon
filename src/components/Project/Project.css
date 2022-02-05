@@ -1,17 +1,18 @@
 .project .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  color: #ffffff;
-  background-color: blue;
+  color: black;
+  background-color: aqua;
 }
 .project .nav-pills .nav-link {
   border-radius: .25rem;
-  border: 1px solid blue;
-  color: #ffffff;
+  border: 1px solid aqua;
+  color: white;
   margin-right: 15px;
   margin-bottom: 15px;
 }
-
-
+.project-details{
+  text-align: justify;
+}
 .project .nav-link {
   display: block;
   padding: 0.6rem 1rem;
@@ -24,9 +25,6 @@
   .project-details .links ul li {
     display: inline;
     margin-right: 15px;
-  }
-  .project-details .card-title {
-      color: blue;
   }
   .project-details a{
     text-decoration: none;

@@ -5,7 +5,7 @@ const ProjectItem = ({ projectInfo }) => {
                 <div class="card bg-dark h-100 w-100 p-3">
                     <div class="card-body">
                         <div className="project-details">
-                            <a href={projectInfo.demo} target="_blank" rel="noreferrer"> <h5 class="card-title">{projectInfo.name}</h5></a>
+                            <a href={projectInfo.demo} target="_blank" rel="noreferrer"><h5 class="card-title text-info">{projectInfo.name}</h5></a>
                             <p class="card-text text-white">{projectInfo.description}</p>
                             {/* demo live and source code link */}
                             <div className="links">
@@ -28,7 +28,7 @@ const ProjectItem = ({ projectInfo }) => {
                             </div>
                         </div>
                         {/* technologies used */}
-                        <div className="tool-list">
+                        <div className="tool-list text-success">
                             <ul>
                                 <li>{projectInfo.tools1}</li>
                                 <li>{projectInfo.tools2}</li>

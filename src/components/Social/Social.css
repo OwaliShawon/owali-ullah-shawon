@@ -3,3 +3,11 @@
     list-style: none;
     margin-bottom: 10px;
   }
+
+  .social-list ul li a {
+    color: aqua ;
+  }
+  
+  .social-list ul li a:hover {
+    color: white !important;
+  }

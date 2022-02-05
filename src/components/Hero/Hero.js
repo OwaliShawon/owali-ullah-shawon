@@ -23,17 +23,17 @@ const Hero = () => {
                         </div>
                         <div data-aos="fade-left" className="designation-list">
                             <ul>
-                                <li>Front-End Web Developer</li>
+                                <li>Software Engineer</li>
                             </ul>
                         </div>
 
-                        <div data-aos="fade-left" className="resume">
+                        <div data-aos="fade-left" className="resume btn-special">
                             <a
                                 href={profiledata.resumeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 type="file"
-                                className="btn btn-outline-primary btn-download text-white my-3 my-sm-0"
+                                className="btn btn-outline-info btn-download text-white my-3 my-sm-0"
                                 download
                             >
                                 Get Resume

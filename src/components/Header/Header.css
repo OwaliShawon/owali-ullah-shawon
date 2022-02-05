@@ -1,14 +1,19 @@
 .navbar-nav li.nav-item {
-    margin: 5px 15px;
+    margin: 0px 10px;
     padding: 5px;
   }
-
+  .navbar-nav a:active{
+    border-top: 1px solid aqua;
+  }
+  .navbar-nav a:hover{
+    color: aqua !important;
+  }
   .logo {
     background-image: url(../../assets/images/portfolioicon.png);
     background-size: cover;
     background-position: center;
-    height: 80px;
-    width: 100px;
+    height: 50px;
+    width: 50px;;  
     background-position: right 70% top 30%;
   }
 

@@ -11,7 +11,7 @@ const SkillItem = ({ info }) => {
                         <h6 class="card-title float-right">{info.percent}%</h6>
                     </div>
 
-                    <ProgressBar className="bg-light" animated variant="primary" style={{ height: "1px" }} now={info.percent} />
+                    <ProgressBar className="bg-light" animated variant="success" style={{ height: "1px" }} now={info.percent} />
 
                 </div>
             </div>

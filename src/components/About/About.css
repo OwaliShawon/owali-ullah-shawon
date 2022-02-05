@@ -6,7 +6,7 @@
   }
   
   .about-text p {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 450px;
     text-align: justify;
   }
@@ -36,7 +36,7 @@
     right: 11px;
     width: 1px;
     height: 12px;
-    background: #20247b;
+    background: green;
     -moz-transform: rotate(15deg);
     -o-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
@@ -99,7 +99,7 @@
   
   .about-section .counter .count {
     font-weight: 700;
-    color: #7C99AC;
+    color: aqua;
     margin: 0 0 5px;
   }
   

@@ -2,7 +2,6 @@
     height: 5%;
 }
 .sub-menu{
-    background-color: #212F3D;
     padding-top: 1em;
     justify-content: space-around;
 }
@@ -23,5 +22,5 @@
 }
 
 .address:hover{
-    color: blue;
+    color: aqua;
 }

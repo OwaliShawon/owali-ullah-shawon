@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <Navbar expand="lg" className="shadow navbar py-3" fixed="top">
+        <Navbar expand="lg" className="shadow navbar py-3" sticky="top">
             <div className="container-fluid">
                 <Navbar.Brand href="#home" className="logo">
                     <span className="logo-icon text-white"></span>
@@ -15,22 +15,27 @@ const Header = () => {
                     <Nav className="navbar-nav ms-auto">
                         {/* navbar pages */}
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#about">
+                            <a className="nav-link text-white" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="/about">
                                 About
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#project">
+                            <a className="nav-link text-white" href="/works">
                                 Works
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#project">
+                            <a className="nav-link text-white" href="/blogs">
                                 Blogs
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#contact">
+                            <a className="nav-link text-white" href="/connect">
                                 Connect
                             </a>
                         </li>

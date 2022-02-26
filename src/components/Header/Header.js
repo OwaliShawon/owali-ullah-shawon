@@ -15,13 +15,18 @@ const Header = () => {
                     <Nav className="navbar-nav ms-auto">
                         {/* navbar pages */}
                         <li className="nav-item">
-                            <a className="nav-link text-white" activeClassName="active" href="/">
+                            <a className="nav-link text-white" href="/">
                                 Home
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" activeClassName="active" href="/about">
+                            <a className="nav-link text-white" href="/about">
                                 About
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="/skills">
+                                Skills
                             </a>
                         </li>
                         <li className="nav-item">
@@ -29,11 +34,11 @@ const Header = () => {
                                 Works
                             </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link text-white" href="/blogs">
                                 Blogs
                             </a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <a className="nav-link text-white" href="/connect">
                                 Connect

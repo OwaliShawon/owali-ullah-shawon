@@ -9,25 +9,25 @@ const Hero = () => {
         <section className="hero-banner" id="hero">
             <div className="container">
                 <div className="hero-body">
-                    <div data-aos="fade-down" className="social-title title">
+                    <div className="social-title title">
                         <Social></Social>
                         <p>Connect Me</p>
                     </div>
 
                     <div className="intro-content ml-5">
-                        <div data-aos="fade-left" className="welcome-title">
+                        <div className="welcome-title">
                             <p>Hello ! I am</p>
                             <h1>
                                 Owali Ullah <span className="bold-color">Shawon</span>
                             </h1>
                         </div>
-                        <div data-aos="fade-left" className="designation-list">
+                        <div className="designation-list">
                             <ul>
                                 <li>Software Engineer</li>
                             </ul>
                         </div>
 
-                        <div data-aos="fade-left" className="resume btn-special">
+                        <div className="resume btn-special">
                             <a
                                 href={profiledata.resumeLink}
                                 target="_blank"

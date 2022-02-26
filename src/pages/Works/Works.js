@@ -1,9 +1,10 @@
 import React from 'react';
+import Project from '../../components/Project/Project';
 
 const WorksPage = () => {
     return (
         <div>
-            This is works page
+            <Project />
         </div>
     );
 };

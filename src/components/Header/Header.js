@@ -6,7 +6,7 @@ import "./Header.css";
 const Header = () => {
     return (
         <Navbar expand="lg" className="shadow navbar py-3" sticky="top">
-            <div className="container-fluid">
+            <div className="container">
                 <Navbar.Brand href="#home" className="logo">
                     <span className="logo-icon text-white"></span>
                 </Navbar.Brand>

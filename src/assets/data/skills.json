@@ -1,7 +1,7 @@
 {
-	"Web": [
+	"FrontEnd": [
 		{
-			"name": "HTML",
+			"name": "HTML5",
 			"percent": 90
 		},
 		{
@@ -9,29 +9,37 @@
 			"percent": 85
 		},
 		{
-			"name": "JavaScript",
-			"percent": 70
+			"name": "SASS",
+			"percent": 50
+		},
+		{
+			"name": "Bootstrap",
+			"percent": 60
+		},
+		{
+			"name": "React Bootstrap",
+			"percent": 60
 		},
 		{
 			"name": "React",
-			"percent": 50
+			"percent": 60
 		},
 		{
+			"name": "Next JS",
+			"percent": 50
+		}
+	],
+	"BackEnd": [
+		{
 			"name": "Node JS",
-			"percent": 55
+			"percent": 50
 		},
 		{
 			"name": "Express JS",
-			"percent": 40
-		},
-		{
-			"name": "Sass",
 			"percent": 50
-		},
-		{
-			"name": "MySQL",
-			"percent": 25
-		},
+		}
+	],
+	"Database": [
 		{
 			"name": "MongoDB",
 			"percent": 50
@@ -43,29 +51,23 @@
 			"percent": 70
 		},
 		{
+			"name": "C",
+			"percent": 40
+		},
+		{
+			"name": "Python",
+			"percent": 50
+		},
+		{
 			"name": "Java",
 			"percent": 50
 		},
 		{
-			"name": "C",
-			"percent": 40
-		}
-	],
-	"LibraryOrFramework": [
-		{
-			"name": "Bootstrap",
-			"percent": 70
-		},
-		{
-			"name": "Foundation",
-			"percent": 0
-		},
-		{
-			"name": "MAterial UI",
+			"name": "Latex",
 			"percent": 50
 		},
 		{
-			"name": "Tailwind CSS",
+			"name": "SQL",
 			"percent": 50
 		}
 	],
@@ -99,12 +101,66 @@
 			"percent": 50
 		},
 		{
-			"name": "Figma",
+			"name": "Canva",
+			"percent": 40
+		},
+		{
+			"name": "Android Studio",
+			"percent": 40
+		}
+	],
+	"OS": [
+		{
+			"name": "Windows",
+			"percent": 50
+		},
+		{
+			"name": "Linux",
+			"percent": 50
+		},
+		{
+			"name": "Mac OS",
+			"percent": 50
+		}
+	],
+	"CMS": [
+		{
+			"name": "Wordpress",
+			"percent": 50
+		},
+		{
+			"name": "WHMCS",
+			"percent": 50
+		}
+	],
+	"Software": [
+		{
+			"name": "Final Cut Pro",
+			"percent": 35
+		},
+		{
+			"name": " MS Office (Word, Power Point)",
+			"percent": 50
+		}
+	],
+	"BusinessManagement": [
+		{
+			"name": " Brand and Product Management",
+			"percent": 50
+		},
+		{
+			"name": "Leadership",
+			"percent": 50
+		}
+	],
+	"Language": [
+		{
+			"name": "English",
 			"percent": 60
 		},
 		{
-			"name": "Canva",
-			"percent": 40
+			"name": "Bengali(Native)",
+			"percent": 100
 		}
 	]
 }

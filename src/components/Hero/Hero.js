@@ -23,7 +23,7 @@ const Hero = () => {
                         </div>
                         <div className="designation-list">
                             <ul>
-                                <li>Software Engineer</li>
+                                <li>Software Developer</li>
                             </ul>
                         </div>
 

@@ -4,7 +4,6 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import "./Footer.css";
 
-
 const Footer = () => {
     return (
         <div className="main-menu">
@@ -21,13 +20,13 @@ const Footer = () => {
                     <Col md="12" className=''>Designed & Built by<a className="address text-info" href='https://github.com/OwaliShawon'> Owali Ullah Shawon</a></Col>
 
                     <Col md="12" className=''>
-                        <a href="#" className="address"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://www.facebook.com/OwaliShawon" target="_blank" className="address" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
                         &nbsp; &nbsp;
-                        <a href="#" className="address"><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href="https://twitter.com/owalishawon" target="_blank" className="address" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
                         &nbsp; &nbsp;
-                        <a href="#" className="address"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href="https://www.linkedin.com/in/owalishawon/" target="_blank" className="address" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                         &nbsp; &nbsp;
-                        <a href="#" className="address"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://github.com/owalishawon" target="_blank" className="address" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
                     </Col>
                 </Row>
             </Container>

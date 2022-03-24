@@ -16,23 +16,5 @@
 			"facebook": "https://www.facebook.com/owalishawon",
 			"twitter": "https://twitter.com/owalishawon"
 		}
-	],
-	"count": [
-		{
-			"Title": "Happy Clients",
-			"count": "5"
-		},
-		{
-			"Title": "Project Completed",
-			"count": "20+"
-		},
-		{
-			"Title": "Tea/Coffee Cup",
-			"count": "50+"
-		},
-		{
-			"Title": "Line of Code",
-			"count": "100+"
-		}
 	]
 }

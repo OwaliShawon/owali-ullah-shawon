@@ -92,43 +92,42 @@ const Skills = () => {
                     {/* all */}
                     <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                         <div className="row">
-                            <h1>Front End</h1>
                             {
                                 FrontEnd.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Back End</h1>
+                            {/* <h1>Back End</h1> */}
                             {
                                 BackEnd.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Database</h1>
+                            {/* <h1>Database</h1> */}
                             {
                                 Database.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Programming</h1>
+                            {/* <h1>Programming</h1> */}
                             {
                                 Programming.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Tools</h1>
+                            {/* <h1>Tools</h1> */}
                             {
                                 Tools.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Operating System</h1>
+                            {/* <h1>Operating System</h1> */}
                             {
                                 OS.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Content Management System</h1>
+                            {/* <h1>Content Management System</h1> */}
                             {
                                 CMS.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Software</h1>
+                            {/* <h1>Software</h1> */}
                             {
                                 Software.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Business & Management</h1>
+                            {/* <h1>Business & Management</h1> */}
                             {
                                 BusinessManagement.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }
-                            <h1>Language</h1>
+                            {/* <h1>Language</h1> */}
                             {
                                 Language.map(skillInfo => <SkillItem info={skillInfo}></SkillItem>)
                             }

@@ -16,7 +16,6 @@ import WorksPage from './pages/Works/Works';
 function App() {
   useEffect(() => {
     AOS.init();
-    AOS.refresh();
   }, []);
   return (
     <div className="App">

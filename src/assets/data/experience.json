@@ -1,10 +1,17 @@
 {
 	"experience": [
 		{
-			"year": "November 2021 - Present",
+			"year": "May 2022 - Present",
+			"companyName": "Oxford International School",
+			"role1": "Working as a NodeJs developer on School Management Systems.",
+			"role2": "So far contributed to Authentication, Self-Care, Material-Distribution, Reports, Admission related APIs.",
+			"role3": "Supporting the team in the bug fixes with SQL programming  which is developed by PHP."
+		},
+		{
+			"year": "July 2021 - April 2022",
 			"companyName": "Intigsol Ltd.",
 			"role1": "Developed user interfaces with modern JavaScript frameworks, HTML5, and CSS3, which improved user satisfaction",
-			"role2": "Building, testing, maintaining and supporting large applications",
+			"role2": "Worked on Fix Assets Management System Front End with Reactjs for FamilyFoodBD.",
 			"role3": "Worked as part of a 4-person team,communicated in a professional way and Built API following RESTful standards to allow users to submit information by storing data in MongoDB"
 		}
 	]

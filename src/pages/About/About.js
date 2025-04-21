@@ -6,7 +6,6 @@ const AboutPage = () => {
     return (
         <div>
             <About></About>
-            <Experience></Experience>
         </div>
     );
 };

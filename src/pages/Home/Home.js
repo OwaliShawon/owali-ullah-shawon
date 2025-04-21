@@ -4,13 +4,15 @@ import AboutPage from '../About/About';
 import SkillsPage from '../Skills/Skills';
 import WorksPage from '../Works/Works';
 import ConnectPage from '../Connect/Connect';
+import Experience from '../../components/Experience/Experience';
 
 const HomePage = () => {
     return (
         <div>
-            <Hero></Hero>
+            <Hero />
             <AboutPage />
             <SkillsPage />
+            <Experience />
             <WorksPage />
             <ConnectPage />
         </div>

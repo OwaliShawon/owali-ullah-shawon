@@ -6,86 +6,74 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 import "./Project.css";
 
 const Project = () => {
-    const [react, setReact] = useState([]);
-    const [reactNative, setReactNative] = useState([]);
-    const [nextjs, setNextjs] = useState([]);
-    const [others, setOther] = useState([]);
-    const [wordpress, setWordpress] = useState([]);
+    const [projectCategories, setProjectCategories] = useState({});
+    const [showAll, setShowAll] = useState(false); // State to toggle between showing 6 or all projects
+
     useEffect(() => {
-        const react = Projects.React;
-        const reactNative = Projects.ReactNative;
-        const nextjs = Projects.NextJs;
-        const others = Projects.Others;
-        const wordpress = Projects.WordPress;
-        setReact(react);
-        setOther(others);
-        setNextjs(nextjs);
-        setReactNative(reactNative);
-        setWordpress(wordpress);
+        setProjectCategories(Projects); // Load all project categories dynamically
         Aos.init({ duration: 2000 });
-    }, [react, others, nextjs, reactNative, wordpress]);
+    }, []);
+
+    const renderProjects = (category) => {
+        const projects = projectCategories[category] || [];
+        const visibleProjects = showAll ? projects : projects.slice(0, 6); // Show all or first 6 projects
+
+        return (
+            <div className="row">
+                {visibleProjects.map((projectInfo, index) => (
+                    <ProjectItem key={index} projectInfo={projectInfo} />
+                ))}
+                {projects.length > 6 && ( // Show the button only if there are more than 6 projects
+                    <div className="col-12 text-center mt-3">
+                        <button
+                            className="btn btn-primary"
+                            onClick={() => setShowAll(!showAll)}
+                        >
+                            {showAll ? "Show Less" : "Show All"}
+                        </button>
+                    </div>
+                )}
+            </div>
+        );
+    };
 
     return (
         <section data-Aos="fade-up" className="project section" id="project">
             <div className="container">
                 <div className="section-title-text mb-2">
-                    <h1 className="dark-color">Some of my Works </h1>
+                    <h1 className="dark-color">Works</h1>
                 </div>
-                {/* catagories of projects section */}
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">All</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-react-tab" data-toggle="pill" href="#pills-react" role="tab" aria-controls="pills-react" aria-selected="false">React</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-react-native-tab" data-toggle="pill" href="#pills-react-native" role="tab" aria-controls="pills-react-native" aria-selected="false" > React Native</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false" > Other</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-wordpress-tab" data-toggle="pill" href="#pills-wordpress" role="tab" aria-controls="pills-wordpress" aria-selected="false" >WordPress</a>
-                    </li>
+                {/* Categories of projects section */}
+                <ul className="nav nav-pills" id="pills-tab" role="tablist">
+                    {Object.keys(Projects).map((category, index) => (
+                        <li className="nav-item" role="presentation" key={index}>
+                            <a
+                                className={`nav-link ${index === 0 ? "active" : ""}`}
+                                id={`pills-${category.toLowerCase()}-tab`}
+                                data-toggle="pill"
+                                href={`#pills-${category.toLowerCase()}`}
+                                role="tab"
+                                aria-controls={`pills-${category.toLowerCase()}`}
+                                aria-selected={index === 0 ? "true" : "false"}
+                            >
+                                {category}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
-                {/* contents of categories */}
-                <div class="tab-content" id="pills-tabContent">
-                    {/* all projects */}
-                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                        <div className="row">
-                            <h1>All</h1>
-                            {react.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                            {reactNative.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                            {nextjs.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                            {others.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                            {wordpress.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
+                {/* Contents of categories */}
+                <div className="tab-content" id="pills-tabContent">
+                    {Object.keys(Projects).map((category, index) => (
+                        <div
+                            key={index}
+                            className={`tab-pane fade ${index === 0 ? "show active" : ""}`}
+                            id={`pills-${category.toLowerCase()}`}
+                            role="tabpanel"
+                            aria-labelledby={`pills-${category.toLowerCase()}-tab`}
+                        >
+                            {renderProjects(category)}
                         </div>
-                    </div>
-                    {/* react projects */}
-                    <div class="tab-pane fade" id="pills-react" role="tabpanel" aria-labelledby="pills-react-tab">
-                        <div className="row">
-                            {react.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                        </div>
-                    </div>
-                    {/* react native projects */}
-                    <div class="tab-pane fade" id="pills-react-native" role="tabpanel" aria-labelledby="pills-react-native-tab">
-                        <div className="row">
-                            {reactNative.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                        </div>
-                    </div>
-                    {/* nextjs projects */}
-                    <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
-                        <div className="row">
-                            {others.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                        </div>
-                    </div>
-                    {/* wordpress projects */}
-                    <div class="tab-pane fade" id="pills-wordpress" role="tabpanel" aria-labelledby="pills-wordpress-tab">
-                        <div className="row">
-                            {wordpress.map((projectInfo) => <ProjectItem projectInfo={projectInfo}></ProjectItem>)}
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

@@ -6,12 +6,15 @@ import "./Experience.css";
 
 const Experience = () => {
     const [experienceData, setExperience] = useState([]);
+    const [showAll, setShowAll] = useState(false); // State to toggle between showing two or all experiences
 
     useEffect(() => {
         const experienceData = experience.experience;
         setExperience(experienceData);
         Aos.init({ duration: 2000 });
     }, []);
+
+    const visibleExperiences = showAll ? experienceData : experienceData.slice(0, 2); // Show all or first two experiences
 
     return (
         <section data-Aos="fade-up" className="experienced section" id="experience">
@@ -21,7 +24,7 @@ const Experience = () => {
                 </div>
                 <div className="row">
                     {
-                        experienceData.map((infoData, index) => (
+                        visibleExperiences.map((infoData, index) => (
                             <div key={index} className="col-md-6 mt-3">
                                 <div className="card experience-card p-3 bg-dark">
                                     <div className="card-body">
@@ -46,6 +49,16 @@ const Experience = () => {
                         ))
                     }
                 </div>
+                {experienceData.length > 2 && (
+                    <div className="text-center mt-4">
+                        <button
+                            className="btn btn-primary"
+                            onClick={() => setShowAll(!showAll)}
+                        >
+                            {showAll ? "Show Less" : "Show All"}
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

@@ -1,5 +1,5 @@
 {
-    "React": [
+    "WebApps": [
         {
             "type": "feature",
             "category": "React",
@@ -72,21 +72,8 @@
             "demo": "https://bcb-auction.netlify.app/",
             "source": "https://github.com/OwaliShawon/bcb-players-auction",
             "tools": ["react-js"]
-        }
-    ],
-    "ReactNative": [
-        {
-            "category": "ReactNative",
-            "name": "Temperature Status Application",
-            "image": "",
-            "description": "This is a weather app, this app provides current weather. In This app, we use device location access. And show the current place's temperature. We used API calls to get data from Open weather API. We have built this app with React-Native. It works in IOS and Andriod platform.",
-            "demo": "",
-            "source": "https://github.com/OwaliShawon/weather-app-native",
-            "tools": ["react-native"]
-        }
-    ],
-    "Others": [
-        {
+        },
+		{
             "category": "Other",
             "name": "Fancy Slider",
             "image": "https://i.ibb.co/drK14Mc/fancy-slider.png",
@@ -130,6 +117,17 @@
             "demo": "https://owalishawon.github.io/personal-website-owali/",
             "source": "https://github.com/OwaliShawon/personal-website-owali",
             "tools": ["html", "css"]
+        }
+    ],
+    "MobileApps": [
+        {
+            "category": "ReactNative",
+            "name": "Temperature Status Application",
+            "image": "",
+            "description": "This is a weather app, this app provides current weather. In This app, we use device location access. And show the current place's temperature. We used API calls to get data from Open weather API. We have built this app with React-Native. It works in IOS and Andriod platform.",
+            "demo": "",
+            "source": "https://github.com/OwaliShawon/weather-app-native",
+            "tools": ["react-native"]
         }
     ],
     "WordPress": [

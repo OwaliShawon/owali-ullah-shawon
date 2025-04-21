@@ -11,7 +11,7 @@ const Experience = () => {
         const experienceData = experience.experience;
         setExperience(experienceData);
         Aos.init({ duration: 2000 });
-    }, [experienceData])
+    }, []);
 
     return (
         <section data-Aos="fade-up" className="experienced section" id="experience">
@@ -19,25 +19,31 @@ const Experience = () => {
                 <div className="section-title-text">
                     <h1 className="dark-color">EXPERIENCE</h1>
                 </div>
-                <div className="row ">
+                <div className="row">
                     {
-                        experienceData.map(infoData => {
-                            return (
-                                <div className="col-md-6 mt-3">
-                                    <div className="card experience-card p-3 bg-dark">
-                                        <div className="card-body">
-                                            <p class="card-text text-success">{infoData.year}</p>
-                                            <h5 class="card-title text-info">{infoData.companyName}</h5>
-                                            <ul>
-                                                <li>{infoData.role1}</li>
-                                                <li>{infoData.role2}</li>
-                                                <li>{infoData.role3}</li>
-                                            </ul>
-                                        </div>
+                        experienceData.map((infoData, index) => (
+                            <div key={index} className="col-md-6 mt-3">
+                                <div className="card experience-card p-3 bg-dark">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-info">{infoData.companyName}</h5>
+                                        <p className="card-text text-muted">{infoData.location}</p>
+                                        {
+                                            infoData.roles.map((role, roleIndex) => (
+                                                <div key={roleIndex} className="mb-3">
+                                                    <p className="card-text text-success">{role.year}</p>
+                                                    <h6 className="text-warning">{role.title}</h6>
+                                                    <ul>
+                                                        {role.tasks.map((task, taskIndex) => (
+                                                            <li key={taskIndex}>{task}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))
+                                        }
                                     </div>
                                 </div>
-                            )
-                        })
+                            </div>
+                        ))
                     }
                 </div>
             </div>

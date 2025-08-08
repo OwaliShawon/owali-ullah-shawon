@@ -1,9 +1,8 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import experience from '../../assets/data/experience.json';
 import './Experience.css';
-import Button from '../common/Button';
+import SectionTitle from '../common/SectionTitle';
+import ShowToggle from '../common/ShowToggle';
 
 const Experience = () => {
   const [experienceData, setExperience] = useState([]);
@@ -12,7 +11,6 @@ const Experience = () => {
   useEffect(() => {
     const experienceData = experience.experience;
     setExperience(experienceData);
-    Aos.init({ duration: 2000 });
   }, []);
 
   const visibleExperiences = showAll ? experienceData : experienceData.slice(0, 2); // Show all or first two experiences
@@ -20,9 +18,7 @@ const Experience = () => {
   return (
     <section data-aos="fade-up" className="experienced section" id="experience">
       <div className="container">
-        <div className="section-title-text">
-          <h1 className="dark-color">EXPERIENCE</h1>
-        </div>
+        <SectionTitle>EXPERIENCE</SectionTitle>
         <div className="row">
           {visibleExperiences.map((infoData, index) => (
             <div key={index} className="col-md-6 mt-3">
@@ -46,13 +42,12 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        {experienceData.length > 2 && (
-          <div className="text-center mt-4">
-            <Button onClick={() => setShowAll(!showAll)}>
-              {showAll ? 'Show Less' : 'Show All'}
-            </Button>
-          </div>
-        )}
+        <ShowToggle
+          totalCount={experienceData.length}
+          threshold={2}
+          showAll={showAll}
+          onToggle={() => setShowAll(!showAll)}
+        />
       </div>
     </section>
   );

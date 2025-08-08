@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Footer.css';
+import ExternalLink from '../common/ExternalLink';
 
 const Footer = () => {
   return (
@@ -11,48 +12,28 @@ const Footer = () => {
         <Row className="logo-upper p-5">
           <Col md="12" className="">
             Designed & Built by
-            <a className="address text-info" href="https://github.com/OwaliShawon">
+            <ExternalLink className="address text-info" href="https://github.com/OwaliShawon">
               {' '}
               Owali Ullah Shawon
-            </a>
+            </ExternalLink>
           </Col>
 
           <Col md="12" className="">
-            <a
-              href="https://www.facebook.com/OwaliShawon"
-              target="_blank"
-              className="address"
-              rel="noreferrer"
-            >
+            <ExternalLink href="https://www.facebook.com/OwaliShawon" className="address">
               <FontAwesomeIcon icon={faFacebook} />
-            </a>
+            </ExternalLink>
             &nbsp; &nbsp;
-            <a
-              href="https://twitter.com/owalishawon"
-              target="_blank"
-              className="address"
-              rel="noreferrer"
-            >
+            <ExternalLink href="https://twitter.com/owalishawon" className="address">
               <FontAwesomeIcon icon={faTwitter} />
-            </a>
+            </ExternalLink>
             &nbsp; &nbsp;
-            <a
-              href="https://www.linkedin.com/in/owalishawon/"
-              target="_blank"
-              className="address"
-              rel="noreferrer"
-            >
+            <ExternalLink href="https://www.linkedin.com/in/owalishawon/" className="address">
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+            </ExternalLink>
             &nbsp; &nbsp;
-            <a
-              href="https://github.com/owalishawon"
-              target="_blank"
-              className="address"
-              rel="noreferrer"
-            >
+            <ExternalLink href="https://github.com/owalishawon" className="address">
               <FontAwesomeIcon icon={faGithub} />
-            </a>
+            </ExternalLink>
           </Col>
         </Row>
       </Container>

@@ -1,10 +1,9 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import Projects from '../../assets/data/projects.json';
 import ProjectItem from '../ProjectItem/ProjectItem';
 import './Project.css';
-import Button from '../common/Button';
+import ShowToggle from '../common/ShowToggle';
+import SectionTitle from '../common/SectionTitle';
 
 const Project = () => {
   const [projectCategories, setProjectCategories] = useState({});
@@ -12,7 +11,6 @@ const Project = () => {
 
   useEffect(() => {
     setProjectCategories(Projects);
-    Aos.init({ duration: 2000 });
   }, []);
 
   const renderProjects = (category) => {
@@ -24,13 +22,15 @@ const Project = () => {
         {visibleProjects.map((projectInfo, index) => (
           <ProjectItem key={index} projectInfo={projectInfo} />
         ))}
-        {projects.length > 6 && (
-          <div className="col-12 text-center mt-4">
-            <Button onClick={() => setShowAll(!showAll)}>
-              {showAll ? 'Show Less' : 'Show All'}
-            </Button>
-          </div>
-        )}
+        <div className="col-12">
+          <ShowToggle
+            totalCount={projects.length}
+            threshold={6}
+            showAll={showAll}
+            onToggle={() => setShowAll(!showAll)}
+            className="text-center mt-4"
+          />
+        </div>
       </div>
     );
   };
@@ -38,9 +38,7 @@ const Project = () => {
   return (
     <section data-aos="fade-up" className="project section" id="project">
       <div className="container">
-        <div className="section-title-text mb-2">
-          <h1 className="dark-color">Works</h1>
-        </div>
+        <SectionTitle>Works</SectionTitle>
         {/* Categories of projects section */}
         <ul className="nav nav-pills" id="pills-tab" role="tablist">
           {Object.keys(Projects).map((category, index) => (

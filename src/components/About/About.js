@@ -1,5 +1,3 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import about from '../../assets/data/about.json';
 import profile from '../../assets/images/profile.jpg';
@@ -11,8 +9,7 @@ const About = () => {
   useEffect(() => {
     const info = about.profile;
     setInfo(info);
-    Aos.init({ duration: 2000 });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // AOS is initialized globally in App.js
   }, []);
   return (
     <section className="about-section section" id="about">

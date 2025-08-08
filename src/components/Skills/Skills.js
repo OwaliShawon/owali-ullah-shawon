@@ -1,16 +1,14 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import SkillData from '../../assets/data/skills.json';
 import SkillItem from './../SkillItem/SkillItem';
 import './Skills.css';
+import SectionTitle from '../common/SectionTitle';
 
 const Skills = () => {
   const [skills, setSkills] = useState({});
 
   useEffect(() => {
     setSkills(SkillData);
-    Aos.init({ duration: 2000 });
   }, []);
 
   const renderSkillCategory = (category) => (
@@ -24,9 +22,7 @@ const Skills = () => {
   return (
     <section data-aos="fade-up" className="skill section" id="skill">
       <div className="container">
-        <div className="section-title-text mb-2">
-          <h1 className="dark-color">MY Skill</h1>
-        </div>
+        <SectionTitle>MY Skill</SectionTitle>
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           {Object.keys(SkillData).map((category, index) => (
             <li className="nav-item" role="presentation" key={index}>

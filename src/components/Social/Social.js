@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import profiledata from '../../assets/data/about.json';
 import './Social.css';
+import ExternalLink from '../common/ExternalLink';
 
 const Social = () => {
   const [info, setInfo] = useState([]);
@@ -18,25 +19,25 @@ const Social = () => {
         return (
           <ul key={idx}>
             <li key="github">
-              <a aria-label="GitHub" href={data.github} target="_blank" rel="noreferrer">
+              <ExternalLink aria-label="GitHub" href={data.github}>
                 <FontAwesomeIcon icon={faGithub} />
-              </a>
+              </ExternalLink>
             </li>
             <li key="linkedin">
-              <a aria-label="LinkedIn" href={data.linkedin} target="_blank" rel="noreferrer">
+              <ExternalLink aria-label="LinkedIn" href={data.linkedin}>
                 {' '}
                 <FontAwesomeIcon icon={faLinkedin} />
-              </a>
+              </ExternalLink>
             </li>
             <li key="facebook">
-              <a aria-label="Facebook" href={data.facebook} target="_blank" rel="noreferrer">
+              <ExternalLink aria-label="Facebook" href={data.facebook}>
                 <FontAwesomeIcon icon={faFacebook} />
-              </a>
+              </ExternalLink>
             </li>
             <li key="twitter">
-              <a aria-label="Twitter" href={data.twitter} target="_blank" rel="noreferrer">
+              <ExternalLink aria-label="Twitter" href={data.twitter}>
                 <FontAwesomeIcon icon={faTwitter} />
-              </a>
+              </ExternalLink>
             </li>
           </ul>
         );

@@ -8,14 +8,7 @@ const Footer = () => {
   return (
     <div className="main-menu">
       <Container className="sub-menu">
-        <Row className="logo-upper p-5">
-          {/* <Col md="4" className='justify-content-center'>
-                        <address>
-                            <a href="tel:+801842320960" className="address"><FontAwesomeIcon icon={faPhone} />  (+880) 1842-320960 </a>
-                            &nbsp; &nbsp;
-                            <a href="mailto: owali.shawon@gmail.com" className="address"><FontAwesomeIcon icon={faAt} /> owali.shawon@gmail.com</a>
-                        </address>
-                    </Col> */}
+  <Row className="logo-upper p-5">
 
           <Col md="12" className="">
             Designed & Built by

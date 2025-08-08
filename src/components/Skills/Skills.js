@@ -27,7 +27,6 @@ const Skills = () => {
         <div className="section-title-text mb-2">
           <h1 className="dark-color">MY Skill</h1>
         </div>
-        {/* Tabs */}
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           {Object.keys(SkillData).map((category, index) => (
             <li className="nav-item" role="presentation" key={index}>
@@ -46,7 +45,6 @@ const Skills = () => {
           ))}
         </ul>
 
-        {/* Skills Items */}
         <div className="tab-content" id="pills-tabContent">
           {Object.keys(SkillData).map((category, index) => (
             <div

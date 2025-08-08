@@ -10,7 +10,6 @@ const Social = () => {
   useEffect(() => {
     const info = profiledata.profile;
     setInfo(info);
-    // Load once; the JSON is static at runtime
   }, []);
 
   return (

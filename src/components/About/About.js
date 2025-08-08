@@ -60,23 +60,7 @@ const About = () => {
           );
         })}
 
-        {/* counter */}
-        {/* <div data-aos="fade-up" className="counter">
-                    <div className="row">
-                        {
-                            count.map(counter => {
-                                return (
-                                    <div className="col-6 col-lg-3">
-                                        <div className="count-data text-center">
-                                            <h6 className="count h2" data-to="500" data-speed="500">{counter.count}</h6>
-                                            <p className="m-0px font-w-600">{counter.Title}</p>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div> */}
+                
       </div>
     </section>
   );

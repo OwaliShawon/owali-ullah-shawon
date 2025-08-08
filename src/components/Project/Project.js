@@ -7,23 +7,23 @@ import './Project.css';
 
 const Project = () => {
   const [projectCategories, setProjectCategories] = useState({});
-  const [showAll, setShowAll] = useState(false); // State to toggle between showing 6 or all projects
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    setProjectCategories(Projects); // Load all project categories dynamically
+  setProjectCategories(Projects);
     Aos.init({ duration: 2000 });
   }, []);
 
   const renderProjects = (category) => {
     const projects = projectCategories[category] || [];
-    const visibleProjects = showAll ? projects : projects.slice(0, 6); // Show all or first 6 projects
+  const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
     return (
       <div className="row">
         {visibleProjects.map((projectInfo, index) => (
           <ProjectItem key={index} projectInfo={projectInfo} />
         ))}
-        {projects.length > 6 && ( // Show the button only if there are more than 6 projects
+                {projects.length > 6 && (
           <div className="col-12 text-center mt-3">
             <button className="btn btn-primary" onClick={() => setShowAll(!showAll)}>
               {showAll ? 'Show Less' : 'Show All'}

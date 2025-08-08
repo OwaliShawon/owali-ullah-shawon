@@ -15,13 +15,6 @@ const ProjectItem = ({ projectInfo }) => {
                 <h5 className="card-title text-info">{projectInfo.name}</h5>
               </a>
               <p className="card-text text-white">{projectInfo.description}</p>
-              {/* <div>
-                                <ul style={{ listStyle: "none" }}>
-                                    <li>{projectInfo.desc1}</li>
-                                    <li>{projectInfo.desc2}</li>
-                                    <li>{projectInfo.desc3}</li>
-                                </ul>
-                            </div> */}
               {/* demo live and source code link */}
               <div className="links">
                 <ul>
@@ -69,7 +62,7 @@ const ProjectItem = ({ projectInfo }) => {
                 <li>{projectInfo.tools10}</li>
               </ul>
             </div>
-            {/* <p className="card-text text-white">{projectInfo.description}</p> */}
+                        
           </div>
         </div>
       </div>

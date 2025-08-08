@@ -39,7 +39,6 @@ const Contact = () => {
                 size="6x"
               ></FontAwesomeIcon>
             </div>
-            {/* <label>Name</label> */}
             <input type="text" name="user_name" placeholder="Your Name" className="item" required />
             <br />
             <input

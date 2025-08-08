@@ -3,3 +3,7 @@
   text-justify: auto;
   text-align: justify;
 }
+
+.experience-card .card-body {
+  color: var(--color-text);
+}

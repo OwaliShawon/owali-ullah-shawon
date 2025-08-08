@@ -1,0 +1,8 @@
+.sidebars-fixed { position: fixed; bottom: 0; z-index: 100; }
+.sidebar-left { left: 24px; }
+.sidebar-right { right: 24px; }
+.sidebar-content { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.sidebar-content a { color: var(--color-text); opacity: 0.7; transition: opacity .2s ease, transform .2s ease; }
+.sidebar-content a:hover { color: var(--color-accent); opacity: 1; transform: translateY(-2px); }
+.sidebar-line { width: 1px; height: 120px; background: var(--color-text); opacity: 0.3; margin-top: 8px; }
+@media (max-width: 992px) { .sidebars-fixed { display: none; } }

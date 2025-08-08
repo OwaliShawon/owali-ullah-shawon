@@ -1,94 +1,33 @@
+/* Hero section spacing */
 .hero-banner {
-  padding: 150px 0px;
+  padding: 100px 0 80px;
 }
 
-.hero-body {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.social-title {
-  display: flex;
-  align-items: center; /* vertically center icons and label */
-  gap: 12px; /* space between icons and label */
-}
-
-/* Vertical label next to social icons */
-.title p {
-  padding: 6px 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #1d293a;
-  border-radius: 4px;
-  margin: 0; /* remove large offsets that broke alignment */
-  writing-mode: vertical-rl; /* vertical text */
-  transform: rotate(180deg); /* make it read bottom-to-top */
-}
-
-.intro-content.ml-5 {
-  padding-left: 10%;
-}
-.welcome-title {
-  font-size: 2vw;
-}
-
-.welcome-title h1 {
-  font-size: 4vw;
-  line-height: 85px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin: 0px auto 25px;
-  color: #fff;
+/* Overline above the main name */
+.intro-overline {
+  color: var(--color-accent);
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.designation-list {
-  margin-left: -40px;
+/* Main name/title */
+.hero-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.designation-list ul li {
-  list-style: none;
-  margin: 0 21px;
-  display: inline-block;
-  font-size: 1vw;
+/* Subtitle/role */
+.hero-subtitle {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  color: #aab4c0;
+  font-weight: 600;
 }
 
-.designation-list ul {
-  position: relative;
-}
-
-.designation-list ul li::before {
-  position: absolute;
-  content: '';
-  height: 11px;
-  width: 8px;
-  margin: 2px -15px;
-  top: 6px;
-  background-color: aqua;
-}
-
-.btn-special a:hover {
-  color: black !important;
-}
-
-@media (max-width: 600px) {
-  .social-title {
-    align-items: flex-start; /* allow label to sit nicely with icons */
-    gap: 8px;
-  }
-  .title p {
-    writing-mode: horizontal-tb; /* switch to horizontal on small screens */
-    transform: none;
-    font-size: 0.85rem;
-  }
-  .welcome-title {
-    font-size: 1rem;
-  }
-  .designation-list ul li {
-    font-size: 1rem;
-  }
-  .welcome-title h1 {
-    font-size: 5vw;
-  }
+/* Description paragraph */
+.hero-description {
+  color: #d3dae4;
+  max-width: 60ch;
 }

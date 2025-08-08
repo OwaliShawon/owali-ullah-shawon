@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import about from '../../assets/data/about.json';
 import profile from '../../assets/images/profile.jpg';
 import './About.css';
+import SectionTitle from '../common/SectionTitle';
 
 const About = () => {
   const [info, setInfo] = useState([]);
@@ -18,10 +19,10 @@ const About = () => {
           return (
             <div className="row align-items-center " key={idx}>
               <div data-aos="fade-right" className="col-lg-8 col-md-8 col-sm-12">
-                <div className="about-text section-title-text go-to">
-                  <h1 className="dark-color">{infoData.aboutTitle}</h1>
-                  <h6 className="lead text-white">{infoData.aboutSubTitle}</h6>
-                  <p>{infoData.aboutDescription}</p>
+                <div className="about-text go-to">
+                  <SectionTitle number={1}>{infoData.aboutTitle}</SectionTitle>
+                  {/* <h6 className="lead text-white">{infoData.aboutSubTitle}</h6> */}
+                  {/* <p>{infoData.aboutDescription}</p> */}
                   <div className="row about-list">
                     <div className="col-md-6">
                       <div className="media">

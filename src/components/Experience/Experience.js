@@ -18,11 +18,11 @@ const Experience = () => {
   return (
     <section data-aos="fade-up" className="experienced section" id="experience">
       <div className="container">
-        <SectionTitle>EXPERIENCE</SectionTitle>
+  <SectionTitle number={3}>EXPERIENCE</SectionTitle>
         <div className="row">
           {visibleExperiences.map((infoData, index) => (
             <div key={index} className="col-md-6 mt-3">
-              <div className="card experience-card p-3 bg-dark">
+              <div className="card experience-card p-3 surface-card">
                 <div className="card-body">
                   <h5 className="card-title text-info">{infoData.companyName}</h5>
                   <p className="card-text text-muted">{infoData.location}</p>

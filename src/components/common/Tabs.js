@@ -1,10 +1,14 @@
 import React from 'react';
 import slugify from '../../utils/slugify';
 
+// categories can be: string[] or { key: string, label: string }[]
 export const TabsNav = ({ categories = [], idPrefix, activeIndex = 0 }) => (
   <ul className="nav nav-pills mb-3" role="tablist">
-    {categories.map((category, index) => {
-      const slug = slugify(category);
+    {categories.map((item, index) => {
+      const isObj = typeof item === 'object' && item !== null;
+      const key = isObj ? item.key : item;
+      const label = isObj ? item.label : item;
+      const slug = slugify(key);
       return (
         <li className="nav-item" role="presentation" key={slug}>
           <a
@@ -16,7 +20,7 @@ export const TabsNav = ({ categories = [], idPrefix, activeIndex = 0 }) => (
             aria-controls={`${idPrefix}-${slug}`}
             aria-selected={index === activeIndex ? 'true' : 'false'}
           >
-            {category}
+            {label}
           </a>
         </li>
       );
@@ -26,8 +30,10 @@ export const TabsNav = ({ categories = [], idPrefix, activeIndex = 0 }) => (
 
 export const TabsPanels = ({ categories = [], idPrefix, activeIndex = 0, renderPanel }) => (
   <div className="tab-content">
-    {categories.map((category, index) => {
-      const slug = slugify(category);
+    {categories.map((item, index) => {
+      const isObj = typeof item === 'object' && item !== null;
+      const key = isObj ? item.key : item;
+      const slug = slugify(key);
       return (
         <div
           key={slug}
@@ -36,7 +42,7 @@ export const TabsPanels = ({ categories = [], idPrefix, activeIndex = 0, renderP
           role="tabpanel"
           aria-labelledby={`${idPrefix}-${slug}-tab`}
         >
-          {renderPanel(category, index)}
+          {renderPanel(key, index)}
         </div>
       );
     })}

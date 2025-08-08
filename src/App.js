@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import ScrollToTop from './components/common/ScrollToTop';
 import BackToTop from './components/common/BackToTop';
+import LeftSidebar from './components/common/LeftSidebar';
+import RightSidebar from './components/common/RightSidebar';
 const AboutPage = lazy(() => import('./pages/About/About'));
 const BlogsPage = lazy(() => import('./pages/Blogs/Blogs'));
 const ConnectPage = lazy(() => import('./pages/Connect/Connect'));
@@ -22,6 +24,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+  <LeftSidebar />
+  <RightSidebar />
       <ScrollToTop />
       <Suspense fallback={<div className="container py-5 text-center text-white">Loading...</div>}>
         <Routes>

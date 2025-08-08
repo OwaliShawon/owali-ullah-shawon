@@ -10,21 +10,20 @@
 
   .social-title {
     display: flex;
-    align-items: flex-start;
-    }
-
-  .title p {
-    transform: rotate(-90deg);
+    align-items: center; /* vertically center icons and label */
+    gap: 12px; /* space between icons and label */
   }
+
+  /* Vertical label next to social icons */
   .title p {
-    padding: 5px 10px;
+    padding: 6px 8px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: #1d293a;
-    transform-origin: 30%;
     border-radius: 4px;
-    margin: 0px -45px; 
-    margin-top: 200px;
+    margin: 0; /* remove large offsets that broke alignment */
+    writing-mode: vertical-rl; /* vertical text */
+    transform: rotate(180deg); /* make it read bottom-to-top */
   }
 
   .intro-content.ml-5 {
@@ -74,6 +73,15 @@
   }
 
   @media (max-width: 600px) {
+    .social-title {
+      align-items: flex-start; /* allow label to sit nicely with icons */
+      gap: 8px;
+    }
+    .title p {
+      writing-mode: horizontal-tb; /* switch to horizontal on small screens */
+      transform: none;
+      font-size: 0.85rem;
+    }
     .welcome-title {
       font-size: 1rem;
      }

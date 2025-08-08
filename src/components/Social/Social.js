@@ -10,25 +10,26 @@ const Social = () => {
     useEffect(() => {
         const info = profiledata.profile;
         setInfo(info);
-    }, [info]);
+        // Load once; the JSON is static at runtime
+    }, []);
 
     return (
         <div className="social-list">
             {
-                info.map(data => {
+                info.map((data, idx) => {
                     return (
-                        <ul>
-                            <li>
-                                <a href={data.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                        <ul key={idx}>
+                            <li key="github">
+                                <a aria-label="GitHub" href={data.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
                             </li>
-                            <li>
-                                <a href={data.linkedin} target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
+                            <li key="linkedin">
+                                <a aria-label="LinkedIn" href={data.linkedin} target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
                             </li>
-                            <li>
-                                <a href={data.facebook} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+                            <li key="facebook">
+                                <a aria-label="Facebook" href={data.facebook} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
                             </li>
-                            <li>
-                                <a href={data.twitter} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
+                            <li key="twitter">
+                                <a aria-label="Twitter" href={data.twitter} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
                             </li>
                         </ul>
                     )

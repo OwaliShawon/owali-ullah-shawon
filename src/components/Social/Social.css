@@ -1,8 +1,13 @@
+.social-list ul {
+  padding: 0;
+  margin: 0;
+}
+
 .social-list ul li {
-    display: block;
-    list-style: none;
-    margin-bottom: 10px;
-  }
+  display: block;
+  list-style: none;
+  margin: 8px 0; /* consistent vertical spacing */
+}
 
   .social-list ul li a {
     color: aqua ;

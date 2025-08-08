@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "path": "/", "label": "Home" },
+    { "path": "/about", "label": "About" },
+    { "path": "/skills", "label": "Skills" },
+    { "path": "/works", "label": "Works" },
+    { "path": "/connect", "label": "Connect" }
+  ]
+}

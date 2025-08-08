@@ -17,7 +17,7 @@ const Experience = () => {
     const visibleExperiences = showAll ? experienceData : experienceData.slice(0, 2); // Show all or first two experiences
 
     return (
-        <section data-Aos="fade-up" className="experienced section" id="experience">
+    <section data-aos="fade-up" className="experienced section" id="experience">
             <div className="container">
                 <div className="section-title-text">
                     <h1 className="dark-color">EXPERIENCE</h1>

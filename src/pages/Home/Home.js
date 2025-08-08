@@ -5,10 +5,12 @@ import SkillsPage from '../Skills/Skills';
 import WorksPage from '../Works/Works';
 import ConnectPage from '../Connect/Connect';
 import Experience from '../../components/Experience/Experience';
+import SEO from '../../components/SEO/SEO';
 
 const HomePage = () => {
     return (
         <div>
+            <SEO title="Home" description="Portfolio of Owali Ullah Shawon, Software Engineer." />
             <Hero />
             <AboutPage />
             <SkillsPage />

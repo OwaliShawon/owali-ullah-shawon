@@ -4,6 +4,7 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 import './Project.css';
 import ShowToggle from '../common/ShowToggle';
 import SectionTitle from '../common/SectionTitle';
+import { TabsNav, TabsPanels } from '../common/Tabs';
 
 const Project = () => {
   const [projectCategories, setProjectCategories] = useState({});
@@ -39,38 +40,12 @@ const Project = () => {
     <section data-aos="fade-up" className="project section" id="project">
       <div className="container">
         <SectionTitle>Works</SectionTitle>
-        {/* Categories of projects section */}
-        <ul className="nav nav-pills" id="pills-tab" role="tablist">
-          {Object.keys(Projects).map((category, index) => (
-            <li className="nav-item" role="presentation" key={index}>
-              <a
-                className={`nav-link ${index === 0 ? 'active' : ''}`}
-                id={`pills-${category.toLowerCase()}-tab`}
-                data-bs-toggle="pill"
-                href={`#pills-${category.toLowerCase()}`}
-                role="tab"
-                aria-controls={`pills-${category.toLowerCase()}`}
-                aria-selected={index === 0 ? 'true' : 'false'}
-              >
-                {category}
-              </a>
-            </li>
-          ))}
-        </ul>
-        {/* Contents of categories */}
-        <div className="tab-content" id="pills-tabContent">
-          {Object.keys(Projects).map((category, index) => (
-            <div
-              key={index}
-              className={`tab-pane fade ${index === 0 ? 'show active' : ''}`}
-              id={`pills-${category.toLowerCase()}`}
-              role="tabpanel"
-              aria-labelledby={`pills-${category.toLowerCase()}-tab`}
-            >
-              {renderProjects(category)}
-            </div>
-          ))}
-        </div>
+        <TabsNav categories={Object.keys(Projects)} idPrefix="pills" />
+        <TabsPanels
+          categories={Object.keys(Projects)}
+          idPrefix="pills"
+          renderPanel={(category) => renderProjects(category)}
+        />
       </div>
     </section>
   );

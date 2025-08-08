@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import profiledata from '../../assets/data/about.json';
+import Button from '../common/Button';
 import navigation from '../../assets/data/navigation.json';
 import './Header.css';
 
@@ -28,15 +29,9 @@ const Header = () => {
             ))}
             {/* download resume button */}
             <li className="nav-item btn-special">
-              <a
-                href={profiledata.resumeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-accent-outline btn-download my-3 my-sm-0"
-                type="button"
-              >
+              <Button href={profiledata.resumeLink} newTab className="btn-download my-3 my-sm-0">
                 Resume
-              </a>
+              </Button>
             </li>
           </Nav>
         </Navbar.Collapse>

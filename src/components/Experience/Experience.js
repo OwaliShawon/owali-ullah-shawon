@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 import experience from '../../assets/data/experience.json';
 import './Experience.css';
+import Button from '../common/Button';
 
 const Experience = () => {
   const [experienceData, setExperience] = useState([]);
@@ -47,9 +48,9 @@ const Experience = () => {
         </div>
         {experienceData.length > 2 && (
           <div className="text-center mt-4">
-            <button className="btn btn-accent-outline" onClick={() => setShowAll(!showAll)}>
+            <Button onClick={() => setShowAll(!showAll)}>
               {showAll ? 'Show Less' : 'Show All'}
-            </button>
+            </Button>
           </div>
         )}
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import profiledata from '../../assets/data/about.json';
 import Social from './../Social/Social';
+import Button from '../common/Button';
 import './Hero.css';
 
 const Hero = () => {
@@ -31,16 +32,9 @@ const Hero = () => {
             </div>
 
             <div className="resume btn-special">
-              <a
-                href={profiledata.resumeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                type="file"
-                className="btn btn-accent-outline btn-download my-3 my-sm-0"
-                download
-              >
+              <Button href={profiledata.resumeLink} newTab className="btn-download my-3 my-sm-0">
                 Get Resume
-              </a>
+              </Button>
             </div>
           </div>
         </div>

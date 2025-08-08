@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import './ContactForm.css';
+import Button from '../common/Button';
 
 const Contact = () => {
   const form = useRef();
@@ -51,7 +52,9 @@ const Contact = () => {
             <br />
             <textarea name="message" placeholder="Write Down Message" className="item" required />
             <br />
-            <input type="submit" value="Send" className="item btn btn-accent-outline" />
+            <Button type="submit" className="item">
+              Send
+            </Button>
           </form>
         </div>
       </Container>

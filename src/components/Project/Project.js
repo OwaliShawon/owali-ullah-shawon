@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Projects from '../../assets/data/projects.json';
 import ProjectItem from '../ProjectItem/ProjectItem';
 import './Project.css';
+import Button from '../common/Button';
 
 const Project = () => {
   const [projectCategories, setProjectCategories] = useState({});
@@ -25,9 +26,9 @@ const Project = () => {
         ))}
         {projects.length > 6 && (
           <div className="col-12 text-center mt-4">
-            <button className="btn btn-accent-outline" onClick={() => setShowAll(!showAll)}>
+            <Button onClick={() => setShowAll(!showAll)}>
               {showAll ? 'Show Less' : 'Show All'}
-            </button>
+            </Button>
           </div>
         )}
       </div>

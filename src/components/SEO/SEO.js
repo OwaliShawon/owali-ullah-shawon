@@ -1,8 +1,8 @@
-import React from "react";
-import { Helmet } from "react-helmet-async";
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, url = "/", image = "/owalishawon.ico" }) => {
-  const fullTitle = title ? `${title} | Owali Ullah Shawon` : "Owali Ullah Shawon";
+const SEO = ({ title, description, url = '/', image = '/owalishawon.ico' }) => {
+  const fullTitle = title ? `${title} | Owali Ullah Shawon` : 'Owali Ullah Shawon';
   return (
     <Helmet>
       <title>{fullTitle}</title>

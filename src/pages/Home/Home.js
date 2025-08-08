@@ -8,17 +8,17 @@ import Experience from '../../components/Experience/Experience';
 import SEO from '../../components/SEO/SEO';
 
 const HomePage = () => {
-    return (
-        <div>
-            <SEO title="Home" description="Portfolio of Owali Ullah Shawon, Software Engineer." />
-            <Hero />
-            <AboutPage />
-            <SkillsPage />
-            <Experience />
-            <WorksPage />
-            <ConnectPage />
-        </div>
-    );
+  return (
+    <div>
+      <SEO title="Home" description="Portfolio of Owali Ullah Shawon, Software Engineer." />
+      <Hero />
+      <AboutPage />
+      <SkillsPage />
+      <Experience />
+      <WorksPage />
+      <ConnectPage />
+    </div>
+  );
 };
 
 export default HomePage;

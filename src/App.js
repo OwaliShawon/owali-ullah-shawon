@@ -1,13 +1,13 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Suspense, useEffect, lazy } from 'react';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import ScrollToTop from "./components/common/ScrollToTop";
-import BackToTop from "./components/common/BackToTop";
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import ScrollToTop from './components/common/ScrollToTop';
+import BackToTop from './components/common/BackToTop';
 const AboutPage = lazy(() => import('./pages/About/About'));
 const BlogsPage = lazy(() => import('./pages/Blogs/Blogs'));
 const ConnectPage = lazy(() => import('./pages/Connect/Connect'));
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-  <ScrollToTop />
+      <ScrollToTop />
       <Suspense fallback={<div className="container py-5 text-center text-white">Loading...</div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -36,7 +36,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
-  <BackToTop />
+      <BackToTop />
       <Footer />
     </div>
   );

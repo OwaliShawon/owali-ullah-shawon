@@ -1,171 +1,196 @@
 {
-    "WebApps": [
-        {
-            "type": "feature",
-            "category": "React",
-            "name": "Doctors Chamber",
-            "image": "https://i.ibb.co/6Jtnq3f/doctors-chamber.png",
-            "description": "By login an user or admin can access dashboard or appointment route. User can make online appointment by login through Gmail or doing Registration to login. There is Database of appointment of the user in Dashboard by Date. User can Review their appointments.",
-            "demo": "https://doctors-chamber-jm.web.app/",
-            "source": "https://github.com/OwaliShawon/doctors-chamber",
-            "tools": ["react-js", "material-ui", "firebase-authentication", "node-js", "express-js", "mongo-db"]
-        },
-        {
-            "category": "React",
-            "name": "Al-Manar Group",
-            "image": "https://i.ibb.co/GH4WjTf/al-manargroup.png",
-            "description": "A single page react company portfolio for al-manar group.",
-            "demo": "https://al-manargroup.netlify.app/",
-            "source": "https://github.com/OwaliShawon/al-manar-react-js",
-            "tools": ["css", "bootstrap", "react", "react-router"]
-        },
-        {
-            "category": "React",
-            "name": "Personal Portfolio 2",
-            "image": "https://i.ibb.co/xMgmFvz/portfolio-practice.png",
-            "description": "",
-            "demo": "",
-            "source": "",
-            "tools": ["react-js", "tailwind-css", "firebase"]
-        },
-        {
-            "category": "React",
-            "name": "Wedding Artista",
-            "image": "https://i.ibb.co/C0BQ9Fv/wedding-artista.png",
-            "description": "This project uses authentication with firebase, Here has dashboard functionality for customer and admin. The client has the ability to request an order, check the status of the requested order from the client dashboard. Admin can add product , delete order  or edit product details and add a new admin.",
-            "demo": "https://wedding-artista.web.app/",
-            "source": "https://github.com/OwaliShawon/wedding-artista-client",
-            "tools": ["react-js", "react-router", "bootstrap", "mongo-db", "node-js", "express-js", "firebase", "heroku"]
-        },
-        {
-            "category": "React",
-            "name": "Dorakata Shop",
-            "image": "https://i.ibb.co/Jp7yBkV/dorakata-shop.png",
-            "description": "A fully responsive demo shop website. For customers and owners. Admin can add, remove or update products whenever needed and the customers can choose products, checkout and pay.",
-            "demo": "https://dorakata-shop.web.app/",
-            "source": "https://github.com/OwaliShawon/dorakata-shop-client",
-            "tools": ["react-js", "react-router", "material-ui", "mongo-db", "node-js", "express-js", "firebase", "heroku"]
-        },
-        {
-            "category": "React",
-            "name": "Dhaka Wheels",
-            "image": "https://i.ibb.co/bRyLRfN/dhaka-wheels.png",
-            "description": "Fully Responsive and User Auth using Google firebase. React Private Route use for any unauthentic user who come to visit.",
-            "demo": "https://dhaka-wheels.netlify.app/",
-            "source": "https://github.com/OwaliShawon/dhaka-wheels",
-            "tools": ["react-js", "react-router", "bootstrap", "mongo-db", "firebase"]
-        },
-        {
-            "category": "React",
-            "name": "Football Freak",
-            "image": "https://i.ibb.co/Z6gSpWq/football-freak.png",
-            "description": "Find out league information which was called by a third party API.",
-            "demo": "https://dhaka-wheels.netlify.app/",
-            "source": "https://github.com/OwaliShawon/dhaka-wheels",
-            "tools": ["react-js", "react-router", "bootstrap", "API"]
-        },
-        {
-            "category": "React",
-            "name": "BCB Players Auction",
-            "image": "https://i.ibb.co/qFSZgyN/bcb-player-auction.png",
-            "description": "A Simple React Website where you can add players to buy. The total price will be increased after clicking on bidding.",
-            "demo": "https://bcb-auction.netlify.app/",
-            "source": "https://github.com/OwaliShawon/bcb-players-auction",
-            "tools": ["react-js"]
-        },
-		{
-            "category": "Other",
-            "name": "Fancy Slider",
-            "image": "https://i.ibb.co/drK14Mc/fancy-slider.png",
-            "description": "Search items like 'nature' and get a list of photos then make a slider with them.",
-            "demo": "https://owalishawon.github.io/fancy-slider/",
-            "source": "https://github.com/OwaliShawon/fancy-slider",
-            "tools": ["html", "css", "bootstrap", "javascript", "api"]
-        },
-        {
-            "category": "Other",
-            "name": "Cooking Master",
-            "image": "https://i.ibb.co/rsLpkwW/cooking-master.png",
-            "description": "By using API Search food items by the first letter of the food name. TheMealDB.com",
-            "demo": "https://owalishawon.github.io/Cooking-Master/",
-            "source": "https://github.com/OwaliShawon/Cooking-Master",
-            "tools": ["html", "css", "bootstrap", "javascript", "api"]
-        },
-        {
-            "category": "Other",
-            "name": "Discover Flight",
-            "image": "https://i.ibb.co/k4BgN5F/screencapture-owalishawon-github-io-discover-flight-2022-02-06-17-10-52.png",
-            "description": "A single-page e-commerce with demo products website.",
-            "demo": "https://owalishawon.github.io/discover-flight/",
-            "source": "https://github.com/OwaliShawon/discover-flight",
-            "tools": ["html", "css", "bootstrap", "javascript"]
-        },
-        {
-            "category": "Other",
-            "name": "Penguin E-Commerce",
-            "image": "https://i.ibb.co/bR1Z4np/penguin-fashion-ecommerce.png",
-            "description": "A single-page e-commerce with demo products website.",
-            "demo": "https://owalishawon.github.io/penguin-fashion-ecommerce/",
-            "source": "https://github.com/OwaliShawon/penguin-fashion-ecommerce",
-            "tools": ["html", "css", "bootstrap"]
-        },
-        {
-            "category": "Other",
-            "name": "Basic Personal Portfolio 1",
-            "image": "https://i.ibb.co/YWJSKJk/portfolio-html-css.png",
-            "description": "A single-page personal portfolio website.",
-            "demo": "https://owalishawon.github.io/personal-website-owali/",
-            "source": "https://github.com/OwaliShawon/personal-website-owali",
-            "tools": ["html", "css"]
-        }
-    ],
-    "MobileApps": [
-        {
-            "category": "ReactNative",
-            "name": "Temperature Status Application",
-            "image": "",
-            "description": "This is a weather app, this app provides current weather. In This app, we use device location access. And show the current place's temperature. We used API calls to get data from Open weather API. We have built this app with React-Native. It works in IOS and Andriod platform.",
-            "demo": "",
-            "source": "https://github.com/OwaliShawon/weather-app-native",
-            "tools": ["react-native"]
-        }
-    ],
-    "WordPress": [
-        {
-            "category": "Wordpress",
-            "name": "Tripol Kebab",
-            "image": "https://i.ibb.co/FHnNTMM/tripolkebab.png",
-            "description": "A restaurant website to see the menu and other information.",
-            "demo": "http://tripolkebab.pl/",
-            "source": "http://tripolkebab.pl/",
-            "tools": ["WordPress", "Elementor", "CSS"]
-        },
-        {
-            "category": "Wordpress",
-            "name": "VehiclesBD",
-            "image": "https://i.ibb.co/MCfDHWR/vehiclesbd.png",
-            "description": "A car shop website about their spare parts information and other details.",
-            "demo": "https://vehiclesbd.com/",
-            "source": "https://vehiclesbd.com/",
-            "tools": ["WordPress", "Elementor", "CSS"]
-        },
-        {
-            "category": "Wordpress",
-            "name": "Intigsol Ltd",
-            "image": "https://i.ibb.co/2Kh9Nbs/intigsol.png",
-            "description": "In this website people can find out all the information. They can order domain and hosting services.",
-            "demo": "https://intigsol.com/",
-            "source": "https://intigsol.com/",
-            "tools": ["WHMCS", "WordPress", "Elementor", "CSS"]
-        },
-        {
-            "category": "Wordpress",
-            "name": "AL-Manar Group",
-            "image": "https://i.ibb.co/WzK8S58/al-manar.png",
-            "description": "A single-page company website where people are able to get all the information about the company.",
-            "demo": "https://al-manargroup.com/",
-            "source": "https://al-manargroup.com/",
-            "tools": ["WordPress", "Elementor", "CSS"]
-        }
-    ]
+  "WebApps": [
+    {
+      "type": "feature",
+      "category": "React",
+      "name": "Doctors Chamber",
+      "image": "https://i.ibb.co/6Jtnq3f/doctors-chamber.png",
+      "description": "By login an user or admin can access dashboard or appointment route. User can make online appointment by login through Gmail or doing Registration to login. There is Database of appointment of the user in Dashboard by Date. User can Review their appointments.",
+      "demo": "https://doctors-chamber-jm.web.app/",
+      "source": "https://github.com/OwaliShawon/doctors-chamber",
+      "tools": [
+        "react-js",
+        "material-ui",
+        "firebase-authentication",
+        "node-js",
+        "express-js",
+        "mongo-db"
+      ]
+    },
+    {
+      "category": "React",
+      "name": "Al-Manar Group",
+      "image": "https://i.ibb.co/GH4WjTf/al-manargroup.png",
+      "description": "A single page react company portfolio for al-manar group.",
+      "demo": "https://al-manargroup.netlify.app/",
+      "source": "https://github.com/OwaliShawon/al-manar-react-js",
+      "tools": ["css", "bootstrap", "react", "react-router"]
+    },
+    {
+      "category": "React",
+      "name": "Personal Portfolio 2",
+      "image": "https://i.ibb.co/xMgmFvz/portfolio-practice.png",
+      "description": "",
+      "demo": "",
+      "source": "",
+      "tools": ["react-js", "tailwind-css", "firebase"]
+    },
+    {
+      "category": "React",
+      "name": "Wedding Artista",
+      "image": "https://i.ibb.co/C0BQ9Fv/wedding-artista.png",
+      "description": "This project uses authentication with firebase, Here has dashboard functionality for customer and admin. The client has the ability to request an order, check the status of the requested order from the client dashboard. Admin can add product , delete order  or edit product details and add a new admin.",
+      "demo": "https://wedding-artista.web.app/",
+      "source": "https://github.com/OwaliShawon/wedding-artista-client",
+      "tools": [
+        "react-js",
+        "react-router",
+        "bootstrap",
+        "mongo-db",
+        "node-js",
+        "express-js",
+        "firebase",
+        "heroku"
+      ]
+    },
+    {
+      "category": "React",
+      "name": "Dorakata Shop",
+      "image": "https://i.ibb.co/Jp7yBkV/dorakata-shop.png",
+      "description": "A fully responsive demo shop website. For customers and owners. Admin can add, remove or update products whenever needed and the customers can choose products, checkout and pay.",
+      "demo": "https://dorakata-shop.web.app/",
+      "source": "https://github.com/OwaliShawon/dorakata-shop-client",
+      "tools": [
+        "react-js",
+        "react-router",
+        "material-ui",
+        "mongo-db",
+        "node-js",
+        "express-js",
+        "firebase",
+        "heroku"
+      ]
+    },
+    {
+      "category": "React",
+      "name": "Dhaka Wheels",
+      "image": "https://i.ibb.co/bRyLRfN/dhaka-wheels.png",
+      "description": "Fully Responsive and User Auth using Google firebase. React Private Route use for any unauthentic user who come to visit.",
+      "demo": "https://dhaka-wheels.netlify.app/",
+      "source": "https://github.com/OwaliShawon/dhaka-wheels",
+      "tools": ["react-js", "react-router", "bootstrap", "mongo-db", "firebase"]
+    },
+    {
+      "category": "React",
+      "name": "Football Freak",
+      "image": "https://i.ibb.co/Z6gSpWq/football-freak.png",
+      "description": "Find out league information which was called by a third party API.",
+      "demo": "https://dhaka-wheels.netlify.app/",
+      "source": "https://github.com/OwaliShawon/dhaka-wheels",
+      "tools": ["react-js", "react-router", "bootstrap", "API"]
+    },
+    {
+      "category": "React",
+      "name": "BCB Players Auction",
+      "image": "https://i.ibb.co/qFSZgyN/bcb-player-auction.png",
+      "description": "A Simple React Website where you can add players to buy. The total price will be increased after clicking on bidding.",
+      "demo": "https://bcb-auction.netlify.app/",
+      "source": "https://github.com/OwaliShawon/bcb-players-auction",
+      "tools": ["react-js"]
+    },
+    {
+      "category": "Other",
+      "name": "Fancy Slider",
+      "image": "https://i.ibb.co/drK14Mc/fancy-slider.png",
+      "description": "Search items like 'nature' and get a list of photos then make a slider with them.",
+      "demo": "https://owalishawon.github.io/fancy-slider/",
+      "source": "https://github.com/OwaliShawon/fancy-slider",
+      "tools": ["html", "css", "bootstrap", "javascript", "api"]
+    },
+    {
+      "category": "Other",
+      "name": "Cooking Master",
+      "image": "https://i.ibb.co/rsLpkwW/cooking-master.png",
+      "description": "By using API Search food items by the first letter of the food name. TheMealDB.com",
+      "demo": "https://owalishawon.github.io/Cooking-Master/",
+      "source": "https://github.com/OwaliShawon/Cooking-Master",
+      "tools": ["html", "css", "bootstrap", "javascript", "api"]
+    },
+    {
+      "category": "Other",
+      "name": "Discover Flight",
+      "image": "https://i.ibb.co/k4BgN5F/screencapture-owalishawon-github-io-discover-flight-2022-02-06-17-10-52.png",
+      "description": "A single-page e-commerce with demo products website.",
+      "demo": "https://owalishawon.github.io/discover-flight/",
+      "source": "https://github.com/OwaliShawon/discover-flight",
+      "tools": ["html", "css", "bootstrap", "javascript"]
+    },
+    {
+      "category": "Other",
+      "name": "Penguin E-Commerce",
+      "image": "https://i.ibb.co/bR1Z4np/penguin-fashion-ecommerce.png",
+      "description": "A single-page e-commerce with demo products website.",
+      "demo": "https://owalishawon.github.io/penguin-fashion-ecommerce/",
+      "source": "https://github.com/OwaliShawon/penguin-fashion-ecommerce",
+      "tools": ["html", "css", "bootstrap"]
+    },
+    {
+      "category": "Other",
+      "name": "Basic Personal Portfolio 1",
+      "image": "https://i.ibb.co/YWJSKJk/portfolio-html-css.png",
+      "description": "A single-page personal portfolio website.",
+      "demo": "https://owalishawon.github.io/personal-website-owali/",
+      "source": "https://github.com/OwaliShawon/personal-website-owali",
+      "tools": ["html", "css"]
+    }
+  ],
+  "MobileApps": [
+    {
+      "category": "ReactNative",
+      "name": "Temperature Status Application",
+      "image": "",
+      "description": "This is a weather app, this app provides current weather. In This app, we use device location access. And show the current place's temperature. We used API calls to get data from Open weather API. We have built this app with React-Native. It works in IOS and Andriod platform.",
+      "demo": "",
+      "source": "https://github.com/OwaliShawon/weather-app-native",
+      "tools": ["react-native"]
+    }
+  ],
+  "WordPress": [
+    {
+      "category": "Wordpress",
+      "name": "Tripol Kebab",
+      "image": "https://i.ibb.co/FHnNTMM/tripolkebab.png",
+      "description": "A restaurant website to see the menu and other information.",
+      "demo": "http://tripolkebab.pl/",
+      "source": "http://tripolkebab.pl/",
+      "tools": ["WordPress", "Elementor", "CSS"]
+    },
+    {
+      "category": "Wordpress",
+      "name": "VehiclesBD",
+      "image": "https://i.ibb.co/MCfDHWR/vehiclesbd.png",
+      "description": "A car shop website about their spare parts information and other details.",
+      "demo": "https://vehiclesbd.com/",
+      "source": "https://vehiclesbd.com/",
+      "tools": ["WordPress", "Elementor", "CSS"]
+    },
+    {
+      "category": "Wordpress",
+      "name": "Intigsol Ltd",
+      "image": "https://i.ibb.co/2Kh9Nbs/intigsol.png",
+      "description": "In this website people can find out all the information. They can order domain and hosting services.",
+      "demo": "https://intigsol.com/",
+      "source": "https://intigsol.com/",
+      "tools": ["WHMCS", "WordPress", "Elementor", "CSS"]
+    },
+    {
+      "category": "Wordpress",
+      "name": "AL-Manar Group",
+      "image": "https://i.ibb.co/WzK8S58/al-manar.png",
+      "description": "A single-page company website where people are able to get all the information about the company.",
+      "demo": "https://al-manargroup.com/",
+      "source": "https://al-manargroup.com/",
+      "tools": ["WordPress", "Elementor", "CSS"]
+    }
+  ]
 }

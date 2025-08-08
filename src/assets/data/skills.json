@@ -1,166 +1,166 @@
 {
-    "FrontEnd": [
-        {
-            "name": "HTML",
-            "percent": 90
-        },
-        {
-            "name": "CSS",
-            "percent": 85
-        },
-        {
-            "name": "Bootstrap",
-            "percent": 60
-        },
-        {
-            "name": "React",
-            "percent": 60
-        },
-        {
-            "name": "Next.js",
-            "percent": 50
-        }
-    ],
-    "BackEnd": [
-        {
-            "name": "Node.js",
-            "percent": 50
-        },
-        {
-            "name": "Express.js",
-            "percent": 50
-        },
-        {
-            "name": "Nest.js",
-            "percent": 50
-        },
-        {
-            "name": "Socket.io",
-            "percent": 50
-        },
-        {
-            "name": "RabbitMQ",
-            "percent": 50
-        },
-        {
-            "name": "Redis",
-            "percent": 50
-        },
-        {
-            "name": "Kafka",
-            "percent": 50
-        }
-    ],
-    "Database": [
-        {
-            "name": "SQL",
-            "percent": 50
-        },
-        {
-            "name": "MySQL",
-            "percent": 50
-        },
-        {
-            "name": "PostgreSQL",
-            "percent": 50
-        },
-        {
-            "name": "Prisma",
-            "percent": 50
-        },
-        {
-            "name": "TypeORM",
-            "percent": 50
-        },
-        {
-            "name": "MongoDB",
-            "percent": 50
-        },
-        {
-            "name": "Mongoose.js",
-            "percent": 50
-        }
-    ],
-    "Programming": [
-        {
-            "name": "JavaScript",
-            "percent": 70
-        },
-        {
-            "name": "TypeScript",
-            "percent": 50
-        }
-    ],
-    "Tools": [
-        {
-            "name": "Docker",
-            "percent": 50
-        },
-        {
-            "name": "Netlify",
-            "percent": 50
-        },
-        {
-            "name": "Heroku",
-            "percent": 50
-        },
-        {
-            "name": "Firebase",
-            "percent": 50
-        }
-    ],
-    "OS": [
-        {
-            "name": "Windows",
-            "percent": 50
-        },
-        {
-            "name": "Linux",
-            "percent": 50
-        },
-        {
-            "name": "Mac OS",
-            "percent": 50
-        }
-    ],
-    "CMS": [
-        {
-            "name": "Wordpress",
-            "percent": 50
-        },
-        {
-            "name": "WHMCS",
-            "percent": 50
-        }
-    ],
-    "Software": [
-        {
-            "name": "Final Cut Pro",
-            "percent": 35
-        },
-        {
-            "name": "MS Office (Word, PowerPoint)",
-            "percent": 50
-        }
-    ],
-    "BusinessManagement": [
-        {
-            "name": "Brand and Product Management",
-            "percent": 50
-        },
-        {
-            "name": "Leadership",
-            "percent": 50
-        }
-    ],
-    "Language": [
-        {
-            "name": "English",
-            "percent": 60
-        },
-        {
-            "name": "Bengali (Native)",
-            "percent": 100
-        }
-    ]
+  "FrontEnd": [
+    {
+      "name": "HTML",
+      "percent": 90
+    },
+    {
+      "name": "CSS",
+      "percent": 85
+    },
+    {
+      "name": "Bootstrap",
+      "percent": 60
+    },
+    {
+      "name": "React",
+      "percent": 60
+    },
+    {
+      "name": "Next.js",
+      "percent": 50
+    }
+  ],
+  "BackEnd": [
+    {
+      "name": "Node.js",
+      "percent": 50
+    },
+    {
+      "name": "Express.js",
+      "percent": 50
+    },
+    {
+      "name": "Nest.js",
+      "percent": 50
+    },
+    {
+      "name": "Socket.io",
+      "percent": 50
+    },
+    {
+      "name": "RabbitMQ",
+      "percent": 50
+    },
+    {
+      "name": "Redis",
+      "percent": 50
+    },
+    {
+      "name": "Kafka",
+      "percent": 50
+    }
+  ],
+  "Database": [
+    {
+      "name": "SQL",
+      "percent": 50
+    },
+    {
+      "name": "MySQL",
+      "percent": 50
+    },
+    {
+      "name": "PostgreSQL",
+      "percent": 50
+    },
+    {
+      "name": "Prisma",
+      "percent": 50
+    },
+    {
+      "name": "TypeORM",
+      "percent": 50
+    },
+    {
+      "name": "MongoDB",
+      "percent": 50
+    },
+    {
+      "name": "Mongoose.js",
+      "percent": 50
+    }
+  ],
+  "Programming": [
+    {
+      "name": "JavaScript",
+      "percent": 70
+    },
+    {
+      "name": "TypeScript",
+      "percent": 50
+    }
+  ],
+  "Tools": [
+    {
+      "name": "Docker",
+      "percent": 50
+    },
+    {
+      "name": "Netlify",
+      "percent": 50
+    },
+    {
+      "name": "Heroku",
+      "percent": 50
+    },
+    {
+      "name": "Firebase",
+      "percent": 50
+    }
+  ],
+  "OS": [
+    {
+      "name": "Windows",
+      "percent": 50
+    },
+    {
+      "name": "Linux",
+      "percent": 50
+    },
+    {
+      "name": "Mac OS",
+      "percent": 50
+    }
+  ],
+  "CMS": [
+    {
+      "name": "Wordpress",
+      "percent": 50
+    },
+    {
+      "name": "WHMCS",
+      "percent": 50
+    }
+  ],
+  "Software": [
+    {
+      "name": "Final Cut Pro",
+      "percent": 35
+    },
+    {
+      "name": "MS Office (Word, PowerPoint)",
+      "percent": 50
+    }
+  ],
+  "BusinessManagement": [
+    {
+      "name": "Brand and Product Management",
+      "percent": 50
+    },
+    {
+      "name": "Leadership",
+      "percent": 50
+    }
+  ],
+  "Language": [
+    {
+      "name": "English",
+      "percent": 60
+    },
+    {
+      "name": "Bengali (Native)",
+      "percent": 100
+    }
+  ]
 }

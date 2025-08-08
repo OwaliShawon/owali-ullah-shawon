@@ -1,16 +1,16 @@
 .project .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: black;
   background-color: aqua;
 }
 .project .nav-pills .nav-link {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: 1px solid aqua;
   color: white;
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.project-details{
+.project-details {
   text-align: justify;
 }
 .project .nav-link {
@@ -19,22 +19,22 @@
 }
 
 .project-details .links {
-    margin: 3px -36px;
-  }
-  
-  .project-details .links ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  .project-details a{
-    text-decoration: none;
-  }
-  .tool-list {
-    margin: 3px -36px;
-  }
-  
-  .tool-list ul li {
-    display: inline;
-    list-style: circle;
-    margin-right: 15px;
-  }
+  margin: 3px -36px;
+}
+
+.project-details .links ul li {
+  display: inline;
+  margin-right: 15px;
+}
+.project-details a {
+  text-decoration: none;
+}
+.tool-list {
+  margin: 3px -36px;
+}
+
+.tool-list ul li {
+  display: inline;
+  list-style: circle;
+  margin-right: 15px;
+}

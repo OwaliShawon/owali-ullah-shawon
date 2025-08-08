@@ -9,10 +9,10 @@
   margin: 8px 0; /* consistent vertical spacing */
 }
 
-  .social-list ul li a {
-    color: aqua ;
-  }
-  
-  .social-list ul li a:hover {
-    color: white !important;
-  }
+.social-list ul li a {
+  color: aqua;
+}
+
+.social-list ul li a:hover {
+  color: white !important;
+}

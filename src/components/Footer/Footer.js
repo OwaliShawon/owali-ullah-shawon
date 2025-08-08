@@ -8,8 +8,7 @@ const Footer = () => {
   return (
     <div className="main-menu">
       <Container className="sub-menu">
-  <Row className="logo-upper p-5">
-
+        <Row className="logo-upper p-5">
           <Col md="12" className="">
             Designed & Built by
             <a className="address text-info" href="https://github.com/OwaliShawon">

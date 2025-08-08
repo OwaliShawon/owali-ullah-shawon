@@ -1,11 +1,11 @@
 .project .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: black;
-  background-color: aqua;
+  color: #111a28;
+  background-color: var(--color-accent);
 }
 .project .nav-pills .nav-link {
   border-radius: 0.25rem;
-  border: 1px solid aqua;
+  border: 1px solid var(--color-accent);
   color: white;
   margin-right: 15px;
   margin-bottom: 15px;

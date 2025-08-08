@@ -10,22 +10,22 @@ const Project = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-  setProjectCategories(Projects);
+    setProjectCategories(Projects);
     Aos.init({ duration: 2000 });
   }, []);
 
   const renderProjects = (category) => {
     const projects = projectCategories[category] || [];
-  const visibleProjects = showAll ? projects : projects.slice(0, 6);
+    const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
     return (
       <div className="row">
         {visibleProjects.map((projectInfo, index) => (
           <ProjectItem key={index} projectInfo={projectInfo} />
         ))}
-                {projects.length > 6 && (
-          <div className="col-12 text-center mt-3">
-            <button className="btn btn-primary" onClick={() => setShowAll(!showAll)}>
+        {projects.length > 6 && (
+          <div className="col-12 text-center mt-4">
+            <button className="btn btn-accent-outline" onClick={() => setShowAll(!showAll)}>
               {showAll ? 'Show Less' : 'Show All'}
             </button>
           </div>

@@ -36,7 +36,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 type="file"
-                className="btn btn-outline-info btn-download text-white my-3 my-sm-0"
+                className="btn btn-accent-outline btn-download my-3 my-sm-0"
                 download
               >
                 Get Resume

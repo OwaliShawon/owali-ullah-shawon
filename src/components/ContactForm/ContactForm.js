@@ -51,7 +51,7 @@ const Contact = () => {
             <br />
             <textarea name="message" placeholder="Write Down Message" className="item" required />
             <br />
-            <input type="submit" value="Send" className="item btn btn-outline-info" />
+            <input type="submit" value="Send" className="item btn btn-accent-outline" />
           </form>
         </div>
       </Container>

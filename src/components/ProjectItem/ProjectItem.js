@@ -62,7 +62,6 @@ const ProjectItem = ({ projectInfo }) => {
                 <li>{projectInfo.tools10}</li>
               </ul>
             </div>
-                        
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ const Header = () => {
                 href={profiledata.resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline-info btn-download text-light my-3 my-sm-0"
+                className="btn btn-accent-outline btn-download my-3 my-sm-0"
                 type="button"
               >
                 Resume

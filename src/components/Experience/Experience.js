@@ -47,7 +47,7 @@ const Experience = () => {
         </div>
         {experienceData.length > 2 && (
           <div className="text-center mt-4">
-            <button className="btn btn-primary" onClick={() => setShowAll(!showAll)}>
+            <button className="btn btn-accent-outline" onClick={() => setShowAll(!showAll)}>
               {showAll ? 'Show Less' : 'Show All'}
             </button>
           </div>

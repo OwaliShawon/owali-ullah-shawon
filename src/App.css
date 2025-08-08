@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
 
+:root {
+  --color-bg: #111a28;
+  --color-surface: #1d293a;
+  --color-text: #ffffff;
+  --color-accent: aqua;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   color: #fff;
-  background-color: #111a28;
+  background-color: var(--color-bg);
   word-wrap: break-word;
   margin: 0;
   padding: 0;
@@ -81,6 +88,31 @@ body {
   color: black !important;
 }
 
+/* Accent buttons */
+.btn-accent {
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  color: #111a28;
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-accent-outline {
+  border: 1px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+}
+.btn-accent-outline:hover,
+.btn-accent-outline:focus {
+  background: var(--color-accent);
+  color: #111a28;
+  border-color: var(--color-accent);
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .section-title-text h1 {
@@ -97,9 +129,9 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid aqua;
-  background: #111a28;
-  color: aqua;
+  border: 1px solid var(--color-accent);
+  background: var(--color-bg);
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +143,7 @@ body {
 }
 .back-to-top:hover {
   color: #111a28;
-  background: aqua;
+  background: var(--color-accent);
 }
 .back-to-top.hidden {
   opacity: 0;

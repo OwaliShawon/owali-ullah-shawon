@@ -22,7 +22,7 @@ const Skills = () => {
     );
 
     return (
-        <section data-Aos="fade-up" className="skill section" id="skill">
+        <section data-aos="fade-up" className="skill section" id="skill">
             <div className="container">
                 <div className="section-title-text mb-2">
                     <h1 className="dark-color">MY Skill</h1>
@@ -34,7 +34,7 @@ const Skills = () => {
                             <a
                                 className={`nav-link ${index === 0 ? "active" : ""}`}
                                 id={`pills-${category.toLowerCase()}-tab`}
-                                data-toggle="pill"
+                                data-bs-toggle="pill"
                                 href={`#pills-${category.toLowerCase()}`}
                                 role="tab"
                                 aria-controls={`pills-${category.toLowerCase()}`}

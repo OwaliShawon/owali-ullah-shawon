@@ -85,3 +85,25 @@ mix-blend-mode: multiply;
     font-size: 2rem;
   }
 }
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid aqua;
+  background: #111a28;
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.back-to-top:hover { color: #111a28; background: aqua; }
+.back-to-top.hidden { opacity: 0; pointer-events: none; transform: translateY(8px); }

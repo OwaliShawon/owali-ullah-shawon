@@ -17,8 +17,8 @@ const SocialMore = () => {
                                 </a>
                             </div>
                             <div className="m-2">
-                                <a href="linkedin.com/in/owalishawon/" target="_blank" rel="noopener noreferrer">
-                                    <Button variant="outline-primary" title="Visit my LinkenIn">
+                                <a href="https://www.linkedin.com/in/owalishawon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <Button variant="outline-primary" title="Visit my LinkedIn">
                                         <i className="fab fa-linkedin"></i> LinkedIn
                                     </Button>
                                 </a>
@@ -32,9 +32,9 @@ const SocialMore = () => {
                                 </a>
                             </div>
                             <div className="m-2">
-                                <a href="https://www.youtube.com/user/oshawon" target="_blank" rel="noopener noreferrer">
-                                    <Button id="youtube-btn" variant="outline-info" title="Lets code together!">
-                                        <i class="fab fa-youtube"></i> Youtube
+                                <a href="https://www.youtube.com/user/oshawon" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <Button id="youtube-btn" variant="outline-info" title="Let's code together!">
+                                        <i className="fab fa-youtube"></i> Youtube
                                     </Button>
                                 </a>
                             </div>

@@ -1,13 +1,13 @@
 const ProjectItem = ({ projectInfo }) => {
     return (
         <div className="col-md-4 d-flex align-items-stretch">
-            <div class="card-deck mt-3 w-100">
-                <div class="card bg-dark h-100 w-100 p-3">
-                    <img class="card-img-top" src={projectInfo.image} alt="" height={400}></img>
-                    <div class="card-body">
+            <div className="card-deck mt-3 w-100">
+                <div className="card bg-dark h-100 w-100 p-3">
+                    <img className="card-img-top" src={projectInfo.image} alt={projectInfo.name} height={400} />
+                    <div className="card-body">
                         <div className="project-details">
-                            <a href={projectInfo.demo} target="_blank" rel="noreferrer"><h5 class="card-title text-info">{projectInfo.name}</h5></a>
-                            <p class="card-text text-white">{projectInfo.description}</p>
+                            <a href={projectInfo.demo} target="_blank" rel="noreferrer"><h5 className="card-title text-info">{projectInfo.name}</h5></a>
+                            <p className="card-text text-white">{projectInfo.description}</p>
                             {/* <div>
                                 <ul style={{ listStyle: "none" }}>
                                     <li>{projectInfo.desc1}</li>
@@ -50,7 +50,7 @@ const ProjectItem = ({ projectInfo }) => {
                                 <li>{projectInfo.tools10}</li>
                             </ul>
                         </div>
-                        {/* <p class="card-text text-white">{projectInfo.description}</p> */}
+                        {/* <p className="card-text text-white">{projectInfo.description}</p> */}
                     </div>
                 </div>
             </div>

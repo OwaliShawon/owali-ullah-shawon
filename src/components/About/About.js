@@ -7,22 +7,20 @@ import "./About.css";
 
 const About = () => {
     const [info, setInfo] = useState([]);
-    const [count, setCount] = useState([]);
 
     useEffect(() => {
         const info = about.profile;
-        const count = about.count;
-        setInfo(info);
-        setCount(count);
+    setInfo(info);
         Aos.init({ duration: 2000 });
-    }, [info, count])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
     return (
         <section className="about-section section" id="about">
             <div className="container">
                 {
-                    info.map(infoData => {
+                    info.map((infoData, idx) => {
                         return (
-                            <div className="row align-items-center " >
+                            <div className="row align-items-center " key={idx}>
                                 <div data-aos="fade-right" className="col-lg-8 col-md-8 col-sm-12">
                                     <div className="about-text section-title-text go-to">
                                         <h1 className="dark-color">{infoData.aboutTitle}</h1>

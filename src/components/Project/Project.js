@@ -38,7 +38,7 @@ const Project = () => {
     };
 
     return (
-        <section data-Aos="fade-up" className="project section" id="project">
+        <section data-aos="fade-up" className="project section" id="project">
             <div className="container">
                 <div className="section-title-text mb-2">
                     <h1 className="dark-color">Works</h1>
@@ -50,7 +50,7 @@ const Project = () => {
                             <a
                                 className={`nav-link ${index === 0 ? "active" : ""}`}
                                 id={`pills-${category.toLowerCase()}-tab`}
-                                data-toggle="pill"
+                                data-bs-toggle="pill"
                                 href={`#pills-${category.toLowerCase()}`}
                                 role="tab"
                                 aria-controls={`pills-${category.toLowerCase()}`}

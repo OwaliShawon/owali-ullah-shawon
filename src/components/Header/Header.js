@@ -30,7 +30,7 @@ const Header = () => {
             {/* download resume button */}
             <li className="nav-item btn-special">
               <Button href={profiledata.resumeLink} newTab className="btn-download my-3 my-sm-0">
-                Resume
+                Get Resume
               </Button>
             </li>
           </Nav>

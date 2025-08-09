@@ -21,8 +21,7 @@ const About = () => {
               <div data-aos="fade-right" className="col-lg-8 col-md-8 col-sm-12">
                 <div className="about-text go-to">
                   <SectionTitle number={1}>{infoData.aboutTitle}</SectionTitle>
-                  {/* <h6 className="lead text-white">{infoData.aboutSubTitle}</h6> */}
-                  {/* <p>{infoData.aboutDescription}</p> */}
+                  <p style={{ whiteSpace: 'pre-line' }}>{infoData.aboutDescription}</p>
                   <div className="row about-list">
                     <div className="col-md-6">
                       <div className="media">

@@ -1,9 +1,88 @@
 .experience-card {
   height: 100%;
-  text-justify: auto;
   text-align: justify;
 }
 
 .experience-card .card-body {
   color: var(--color-text);
+}
+
+/* Vertical timeline */
+.timeline {
+  position: relative;
+  margin-left: 0;
+  padding-left: 48px; /* Reserve space for line, dot, and date column */
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 16px; /* Place the line inside the container */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.15);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* date (1/4) : card (3/4) */
+  column-gap: 16px;
+}
+.timeline-dot {
+  position: absolute;
+  left: 10px; /* Center the 12px dot over the 16px line */
+  top: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.timeline-badge {
+  /* grid item, lives in the date column */
+  align-self: start;
+  background: rgba(100, 255, 218, 0.15);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.timeline-content {
+  margin-left: 0; /* sits in the card column */
+}
+
+/* Date styling inside card */
+.timeline-role-date {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.experience-card ul {
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+.experience-card li + li {
+  margin-top: 4px;
+}
+
+/* Responsive: stack date above card on narrow screens */
+@media (max-width: 767.98px) {
+  .timeline {
+    padding-left: 32px; /* reclaim space on small screens */
+  }
+  .timeline:before {
+    left: 12px;
+  }
+  .timeline-dot {
+    left: 6px;
+  }
+  .timeline-item {
+    grid-template-columns: 1fr; /* stack */
+  }
+  .timeline-badge {
+    margin-bottom: 8px;
+  }
 }

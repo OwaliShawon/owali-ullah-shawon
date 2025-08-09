@@ -22,8 +22,8 @@ const Skills = () => {
 
   return (
     <section data-aos="fade-up" className="skill section" id="skill">
-    <div className="container">
-  <SectionTitle number={2}>Skills</SectionTitle>
+      <div className="container">
+        <SectionTitle number={2}>Skills</SectionTitle>
         <TabsNav
           categories={Object.keys(SkillData).map((key) => ({
             key,

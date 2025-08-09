@@ -80,7 +80,14 @@ const HoneypotField = () => (
 
 const SubmitButton = ({ sending }) => (
   <div className="submit-row">
-    <Button type="submit" variant="accent" size="lg" className="w-100" loading={sending} disabled={sending}>
+    <Button
+      type="submit"
+      variant="accent"
+      size="lg"
+      className="w-100"
+      loading={sending}
+      disabled={sending}
+    >
       {sending ? 'Sending…' : 'Send Message'}
     </Button>
   </div>
@@ -131,8 +138,8 @@ const Contact = () => {
     if (hp) {
       return; // silently ignore
     }
-  setStatus(null);
-  if (!validateForm()) return;
+    setStatus(null);
+    if (!validateForm()) return;
     setSending(true);
     const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
     const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -143,13 +150,19 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setStatus({ type: 'success', message: "Thanks! Your message was sent. I'll reply soon." });
+          setStatus({
+            type: 'success',
+            message: "Thanks! Your message was sent. I'll reply soon.",
+          });
           form.current?.reset();
           setErrors({});
         },
         (error) => {
           console.log(error.text);
-          setStatus({ type: 'error', message: 'Sorry, something went wrong. Please try again later.' });
+          setStatus({
+            type: 'error',
+            message: 'Sorry, something went wrong. Please try again later.',
+          });
         }
       )
       .finally(() => setSending(false));
@@ -167,12 +180,14 @@ const Contact = () => {
             autohide
           >
             <Toast.Header closeButton>
-              <strong className="me-auto">{status?.type === 'error' ? 'Error' : 'Message sent'}</strong>
+              <strong className="me-auto">
+                {status?.type === 'error' ? 'Error' : 'Message sent'}
+              </strong>
             </Toast.Header>
             <Toast.Body className="text-white">{status?.message}</Toast.Body>
           </Toast>
         </ToastContainer>
-  <SectionTitle number={5}>Connect with me</SectionTitle>
+        <SectionTitle number={5}>Connect with me</SectionTitle>
 
         <div className="contact-form">
           <form className="contact-card" ref={form} onSubmit={sendEmail} noValidate>
@@ -181,12 +196,14 @@ const Contact = () => {
             <SubjectPhoneFields errors={errors} />
             <MessageField errors={errors} onChange={(e) => setMessageLen(e.target.value.length)} />
             <div className="char-counter">{messageLen} / 1000</div>
-            {errors.message && <div className="invalid-feedback d-block mb-2">{errors.message}</div>}
+            {errors.message && (
+              <div className="invalid-feedback d-block mb-2">{errors.message}</div>
+            )}
             <HoneypotField />
             <SubmitButton sending={sending} />
           </form>
         </div>
-  </div>
+      </div>
     </section>
   );
 };

@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-  <LeftSidebar />
-  <RightSidebar />
+      <LeftSidebar />
+      <RightSidebar />
       <ScrollToTop />
       <Suspense fallback={<div className="container py-5 text-center text-white">Loading...</div>}>
         <Routes>

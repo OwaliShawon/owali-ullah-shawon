@@ -4,7 +4,7 @@ import { ProgressBar } from 'react-bootstrap';
 const SkillItem = ({ info }) => {
   return (
     <div className="col-md-4">
-  <div className="card surface-card mb-4">
+      <div className="card surface-card mb-4">
         <div className="card-body">
           <div className="progress-header clearfix">
             <h5 className="card-title float-left">{info.name}</h5>

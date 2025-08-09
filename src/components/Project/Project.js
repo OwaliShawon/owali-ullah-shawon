@@ -39,11 +39,14 @@ const Project = () => {
   return (
     <section data-aos="fade-up" className="project section" id="project">
       <div className="container">
-  <SectionTitle number={4}>Works</SectionTitle>
+        <SectionTitle number={4}>Works</SectionTitle>
         <TabsNav
           categories={Object.keys(Projects).map((key) => ({
             key,
-            label: key.toLowerCase() === 'wordpress' ? 'WordPress' : key.replace(/([A-Z])/g, ' $1').trim(),
+            label:
+              key.toLowerCase() === 'wordpress'
+                ? 'WordPress'
+                : key.replace(/([A-Z])/g, ' $1').trim(),
           }))}
           idPrefix="pills-project"
         />

@@ -3,6 +3,7 @@
     { "path": "/", "label": "Home" },
     { "path": "/about", "label": "About" },
     { "path": "/skills", "label": "Skills" },
+    { "path": "/experience", "label": "Experience" },
     { "path": "/works", "label": "Works" },
     { "path": "/connect", "label": "Connect" }
   ]

@@ -15,6 +15,7 @@ const ConnectPage = lazy(() => import('./pages/Connect/Connect'));
 const HomePage = lazy(() => import('./pages/Home/Home'));
 const SkillsPage = lazy(() => import('./pages/Skills/Skills'));
 const WorksPage = lazy(() => import('./pages/Works/Works'));
+const ExperiencePage = lazy(() => import('./pages/Experience/Experience'));
 const NotFoundPage = lazy(() => import('./pages/NotFound/NotFound'));
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="skills" element={<SkillsPage />} />
+          <Route path="experience" element={<ExperiencePage />} />
           <Route path="works" element={<WorksPage />} />
           <Route path="blogs" element={<BlogsPage />} />
           <Route path="connect" element={<ConnectPage />} />

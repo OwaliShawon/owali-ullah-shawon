@@ -3,7 +3,7 @@ import ExternalLink from '../common/ExternalLink';
 // Small, focused subcomponents kept in-file to avoid extra files while improving clarity
 const ProjectImage = ({ src, alt }) => {
   if (!src) return null;
-  return <img className="card-img-top project-card-image" src={src} alt={alt} />;
+  return <img className="project-thumb" src={src} alt={alt} loading="lazy" />;
 };
 
 const ProjectLinks = ({ demo, source, name }) => {
@@ -56,12 +56,12 @@ const ProjectLinks = ({ demo, source, name }) => {
 const TechList = ({ tools = [] }) => {
   if (!tools.length) return null;
   return (
-    <div className="tool-list text-info text-justify">
-      <ul>
-        {tools.map((tool, idx) => (
-          <li key={idx}>{tool}</li>
-        ))}
-      </ul>
+    <div className="tags-list">
+      {tools.map((tool, idx) => (
+        <span key={idx} className="tag">
+          {tool}
+        </span>
+      ))}
     </div>
   );
 };
@@ -83,28 +83,39 @@ const ProjectItem = ({ projectInfo }) => {
   const tools = Array.isArray(projectInfo.tools) ? projectInfo.tools : legacyTools;
 
   return (
-    <div className="col-md-4 mb-4 d-flex align-items-stretch">
-      <div className="card surface-card h-100 w-100 p-3">
-        <ProjectImage src={projectInfo.image} alt={projectInfo.name} />
-        <div className="card-body d-flex flex-column">
-          <div className="project-details">
-            {projectInfo.demo ? (
-              <ExternalLink href={projectInfo.demo} title={`Open ${projectInfo.name} demo`}>
-                <h5 className="card-title text-info">{projectInfo.name}</h5>
-              </ExternalLink>
-            ) : (
-              <h5 className="card-title text-info">{projectInfo.name}</h5>
-            )}
-            {projectInfo.description && (
-              <p className="card-text text-white">{projectInfo.description}</p>
-            )}
-            <div className="mt-auto">
-              <ProjectLinks
-                demo={projectInfo.demo}
-                source={projectInfo.source}
-                name={projectInfo.name}
-              />
-              <TechList tools={tools} />
+    <div className="col-12 mb-4">
+      <div className="card surface-card project-card-horizontal p-3">
+        <div className="row g-3 align-items-center">
+          <div className="col-sm-4 col-md-3">
+            <ProjectImage src={projectInfo.image} alt={projectInfo.name} />
+          </div>
+          <div className="col-sm-8 col-md-9">
+            <div className="card-body p-0">
+              <div className="project-details">
+                {projectInfo.demo ? (
+                  <ExternalLink href={projectInfo.demo} title={`Open ${projectInfo.name} demo`}>
+                    <h5 className="card-title text-info mb-2">
+                      {projectInfo.name}
+                      <span aria-hidden="true" className="ms-2 external-arrow">
+                        ↗
+                      </span>
+                    </h5>
+                  </ExternalLink>
+                ) : (
+                  <h5 className="card-title text-info mb-2">{projectInfo.name}</h5>
+                )}
+                {projectInfo.description && (
+                  <p className="card-text text-white mb-2">{projectInfo.description}</p>
+                )}
+                <TechList tools={tools} />
+                <div className="mt-2">
+                  <ProjectLinks
+                    demo={projectInfo.demo}
+                    source={projectInfo.source}
+                    name={projectInfo.name}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,33 @@
 {
+  "Backends": [
+    {
+      "category": "Backend",
+      "name": "MicroservicesArchitecture-NestJS-RabbitMQ",
+      "image": "",
+      "description": "Microservices starter with NestJS and RabbitMQ for inter-service communication.",
+      "demo": "",
+      "source": "https://github.com/OwaliShawon/MicroservicesArchitecture-NestJS-RabbitMQ",
+      "tools": ["NestJS", "RabbitMQ", "TypeScript", "Docker"]
+    },
+    {
+      "category": "Backend",
+      "name": "Service Booking Platform Backend (Mini Sheba.xyz)",
+      "image": "",
+      "description": "Simple backend for booking services like cleaning and plumbing; JWT auth and email.",
+      "demo": "",
+      "source": "https://github.com/OwaliShawon/booking-service-nestjs",
+      "tools": ["NestJS", "PostgreSQL", "TypeORM", "JWT", "Docker"]
+    },
+    {
+      "category": "Backend",
+      "name": "Flight Booking Backend",
+      "image": "",
+      "description": "Backend service for flight reservations, authentication, and admin operations.",
+      "demo": "",
+      "source": "https://github.com/OwaliShawon/flight-booking/tree/main/flight-booking-backend",
+      "tools": ["NestJS", "PostgreSQL", "TypeORM", "JWT", "Swagger"]
+    }
+  ],
   "WebApps": [
     {
       "type": "feature",
@@ -16,6 +45,24 @@
         "express-js",
         "mongo-db"
       ]
+    },
+    {
+      "category": "Next.js",
+      "name": "Tripol Kebab & Grill",
+      "image": "",
+      "description": "Product and order system with admin product management and user cart/checkout (no auth).",
+      "demo": "https://tripolkebab.vercel.app",
+      "source": "",
+      "tools": ["Next.js", "MongoDB", "Mongoose", "Redux Toolkit", "Axios", "Firebase"]
+    },
+    {
+      "category": "Express.js",
+      "name": "Education Management System",
+      "image": "",
+      "description": "Auth (JWT), material distribution, defaulter list, self-care module; marks entry and PDF reports.",
+      "demo": "https://ems.ois.edu.bd",
+      "source": "",
+      "tools": ["Express.js", "MySQL", "Prisma", "EJS"]
     },
     {
       "category": "React",

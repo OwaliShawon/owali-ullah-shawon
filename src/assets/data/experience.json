@@ -1,13 +1,25 @@
 {
   "experience": [
     {
-      "companyName": "SOFTIC",
+      "companyName": "Sheba Platform Limited",
+      "location": "Banani, Dhaka, Bangladesh",
+      "website": "https://sheba-platform.xyz/",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "year": "July 2025 - Present",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "companyName": "Softic OPC",
       "location": "Dhaka, Bangladesh",
       "website": "https://softic.ai",
       "roles": [
         {
-          "title": "Software Engineer",
-          "year": "Jan 2023 - Present",
+          "title": "Software Engineer | Onsite",
+          "year": "Jan 2023 - May 2025",
           "tasks": [
             "Engineered a real‑time chat support application using Express.js, SocketIO, and MongoDB, enabling seamless user communication and improving platform engagement.",
             "Developed and maintained a secure transaction system supporting deposits, withdrawals, and account transfers across multiple currencies, ensuring data integrity and compliance with financial standards.",
@@ -41,11 +53,11 @@
     },
     {
       "companyName": "OPLLY",
-      "location": "Dhaka, Bangladesh",
+      "location": "Mohakhali DOHS, Dhaka, Bangladesh",
       "website": "https://opply.com",
       "roles": [
         {
-          "title": "Frontend Developer",
+          "title": "Frontend Developer | Remote",
           "year": "Dec 2022 - Apr 2023",
           "tasks": [
             "Collaborated as a mobile developer on a team building a NativeScript Vue mobile app, enabling users to request personalized video messages from their favorite celebrities, with features for celebrities to record and upload videos for users."

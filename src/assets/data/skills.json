@@ -1,113 +1,44 @@
 {
   "FrontEnd": [
-    {
-      "name": "HTML",
-      "percent": 90
-    },
-    {
-      "name": "CSS",
-      "percent": 85
-    },
-    {
-      "name": "Bootstrap",
-      "percent": 60
-    },
-    {
-      "name": "React",
-      "percent": 60
-    },
-    {
-      "name": "Next.js",
-      "percent": 50
-    }
+    { "name": "HTML", "percent": 85 },
+    { "name": "CSS", "percent": 80 },
+    { "name": "Bootstrap", "percent": 70 },
+    { "name": "React", "percent": 70 },
+    { "name": "Next.js", "percent": 60 },
+    { "name": "Vue", "percent": 40 }
   ],
   "BackEnd": [
-    {
-      "name": "Node.js",
-      "percent": 50
-    },
-    {
-      "name": "Express.js",
-      "percent": 50
-    },
-    {
-      "name": "Nest.js",
-      "percent": 50
-    },
-    {
-      "name": "Socket.io",
-      "percent": 50
-    },
-    {
-      "name": "RabbitMQ",
-      "percent": 50
-    },
-    {
-      "name": "Redis",
-      "percent": 50
-    },
-    {
-      "name": "Kafka",
-      "percent": 50
-    }
+    { "name": "Node.js", "percent": 75 },
+    { "name": "Express.js", "percent": 70 },
+    { "name": "NestJS", "percent": 70 },
+    { "name": "Socket.IO", "percent": 60 },
+    { "name": "REST APIs", "percent": 70 },
+    { "name": "GraphQL", "percent": 50 },
+    { "name": "Microservices", "percent": 60 }
   ],
   "Database": [
-    {
-      "name": "SQL",
-      "percent": 50
-    },
-    {
-      "name": "MySQL",
-      "percent": 50
-    },
-    {
-      "name": "PostgreSQL",
-      "percent": 50
-    },
-    {
-      "name": "Prisma",
-      "percent": 50
-    },
-    {
-      "name": "TypeORM",
-      "percent": 50
-    },
-    {
-      "name": "MongoDB",
-      "percent": 50
-    },
-    {
-      "name": "Mongoose.js",
-      "percent": 50
-    }
+    { "name": "SQL", "percent": 60 },
+    { "name": "MySQL", "percent": 60 },
+    { "name": "PostgreSQL", "percent": 65 },
+    { "name": "MongoDB", "percent": 60 },
+    { "name": "Prisma", "percent": 60 },
+    { "name": "TypeORM", "percent": 50 },
+    { "name": "Mongoose", "percent": 50 }
   ],
   "Programming": [
-    {
-      "name": "JavaScript",
-      "percent": 70
-    },
-    {
-      "name": "TypeScript",
-      "percent": 50
-    }
+    { "name": "JavaScript", "percent": 75 },
+    { "name": "TypeScript", "percent": 65 },
+    { "name": "Java", "percent": 40 },
+    { "name": "Python", "percent": 35 },
+    { "name": "Go", "percent": 20 }
   ],
   "Tools": [
-    {
-      "name": "Docker",
-      "percent": 50
-    },
-    {
-      "name": "Netlify",
-      "percent": 50
-    },
-    {
-      "name": "Heroku",
-      "percent": 50
-    },
-    {
-      "name": "Firebase",
-      "percent": 50
-    }
+    { "name": "Docker", "percent": 60 },
+    { "name": "KafkaJS", "percent": 50 },
+    { "name": "AWS S3", "percent": 40 },
+    { "name": "Netlify", "percent": 50 },
+    { "name": "Heroku", "percent": 50 },
+    { "name": "Firebase", "percent": 50 }
   ],
   "OS": [
     {
@@ -119,13 +50,13 @@
       "percent": 50
     },
     {
-      "name": "Mac OS",
+      "name": "macOS",
       "percent": 50
     }
   ],
   "CMS": [
     {
-      "name": "Wordpress",
+      "name": "WordPress",
       "percent": 50
     },
     {
@@ -156,7 +87,7 @@
   "Language": [
     {
       "name": "English",
-      "percent": 60
+      "percent": 80
     },
     {
       "name": "Bengali (Native)",

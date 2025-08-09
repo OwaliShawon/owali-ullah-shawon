@@ -5,16 +5,17 @@
       "name": "Owali Ullah Shawon",
       "aboutTitle": "ABOUT ME",
       "aboutSubTitle": "Software Engineer",
-      "aboutDescription": "Developed specialized skills via years of exposure in various locations and endeavour to be the greatest connection between the analyst and the technologist. Would like to work on a project topic and make a significant contribution to the area of computing science. When it comes to addressing difficulties swiftly and effectively, I am most inspired and passionate, and I am eager to take the next important step in my career.",
+      "aboutDescription": "Self‑motivated Software Engineer with strong expertise in backend development using Node.js, Express.js, Nest.js, and modern databases. Passionate about solving complex problems and developing scalable systems, focusing on fintech, edutech applications, and real‑time solutions.",
       "birthDay": "20 December 1997",
-      "Residence": "Bangldesh",
+      "Residence": "Bangladesh",
       "Address": "Dhaka, Bangladesh",
       "Email": "owali.shawon@gmail.com",
-      "Phone": "+880 1842320960",
+      "Phone": "+8801842320960",
       "github": "https://github.com/OwaliShawon",
       "linkedin": "https://www.linkedin.com/in/owalishawon/",
       "facebook": "https://www.facebook.com/owalishawon",
-      "twitter": "https://twitter.com/owalishawon"
+      "twitter": "https://twitter.com/owalishawon",
+      "website": "https://owali.netlify.app"
     }
   ]
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import experience from '../../assets/data/experience.json';
 import './Experience.css';
 import SectionTitle from '../common/SectionTitle';
@@ -7,13 +8,20 @@ import ShowToggle from '../common/ShowToggle';
 const Experience = () => {
   const [experienceData, setExperience] = useState([]);
   const [showAll, setShowAll] = useState(false); // State to toggle between showing two or all experiences
+  const { pathname } = useLocation();
+  const isHome = pathname === '/' || pathname.toLowerCase().startsWith('/home');
 
   useEffect(() => {
     const experienceData = experience.experience;
     setExperience(experienceData);
   }, []);
 
-  const visibleExperiences = showAll ? experienceData : experienceData.slice(0, 2); // Show all or first two experiences
+  const threshold = 2;
+  const visibleExperiences = isHome
+    ? showAll
+      ? experienceData
+      : experienceData.slice(0, threshold)
+    : experienceData;
 
   // Compute a company-level date range from its roles, handling various hyphen characters.
   const getCompanyDateRange = (roles = []) => {
@@ -65,12 +73,14 @@ const Experience = () => {
             );
           })}
         </div>
-        <ShowToggle
-          totalCount={experienceData.length}
-          threshold={2}
-          showAll={showAll}
-          onToggle={() => setShowAll(!showAll)}
-        />
+        {isHome && (
+          <ShowToggle
+            totalCount={experienceData.length}
+            threshold={threshold}
+            showAll={showAll}
+            onToggle={() => setShowAll(!showAll)}
+          />
+        )}
       </div>
     </section>
   );

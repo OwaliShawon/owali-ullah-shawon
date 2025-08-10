@@ -68,6 +68,34 @@
   margin-top: 4px;
 }
 
+/* Company avatar and meta */
+.company-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(100, 255, 218, 0.15);
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.company-meta .card-title {
+  line-height: 1.1;
+}
+
+/* Role toggle link */
+.role-toggle {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.role-toggle:hover,
+.role-toggle:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 /* Responsive: stack date above card on narrow screens */
 @media (max-width: 767.98px) {
   .timeline {

@@ -1,8 +1,22 @@
 import ExternalLink from '../common/ExternalLink';
 
+const getAcronym = (str = '') =>
+  str
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((s) => s[0]?.toUpperCase() || '')
+    .join('') || 'P';
+
 // Small, focused subcomponents kept in-file to avoid extra files while improving clarity
 const ProjectImage = ({ src, alt }) => {
-  if (!src) return null;
+  if (!src) {
+    return (
+      <div className="project-thumb-placeholder" aria-label={`${alt || 'Project'} placeholder`}>
+        {getAcronym(alt)}
+      </div>
+    );
+  }
   return <img className="project-thumb" src={src} alt={alt} loading="lazy" />;
 };
 

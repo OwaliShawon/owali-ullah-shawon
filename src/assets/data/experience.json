@@ -10,8 +10,7 @@
           "year": "July 2025 - Present",
           "tasks": [
             "Working with a dynamic team to develop and maintain scalable backend services for ShebaPay, utilizing Node.js, NestJS, Express.js, MSSQL and MongoDB to ensure high performance and reliability.",
-            "Integrated multiple bank APIs enabling secure money transfer, cash-in, cash-out, and real-time transaction routing.",
-            
+            "Integrated multiple bank APIs enabling secure money transfer, cash-in, cash-out, and real-time transaction routing."
           ]
         }
       ]

@@ -45,6 +45,7 @@ const Button = ({
 
   if (href) {
     return (
+      // eslint-disable-next-line react/jsx-no-target-blank
       <a
         className={classes}
         href={href}

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, memo, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import Projects from '../../assets/data/projects.json';
 import ProjectItem from '../ProjectItem/ProjectItem';
@@ -6,7 +6,7 @@ import './Project.css';
 import ShowToggle from '../common/ShowToggle';
 import SectionTitle from '../common/SectionTitle';
 
-const Project = () => {
+const Project = memo(() => {
   const [projectCategories, setProjectCategories] = useState({});
   const [showAll, setShowAll] = useState(false);
   const { pathname } = useLocation();
@@ -16,18 +16,24 @@ const Project = () => {
     setProjectCategories(Projects);
   }, []);
 
-  // Flatten all categories into a single list to match the screenshot's simple list layout
+  // Flatten all categories into a single list
   const allProjects = useMemo(() => {
     const arrays = Object.values(projectCategories || {});
     return arrays.reduce((acc, arr) => acc.concat(arr || []), []);
   }, [projectCategories]);
 
   const threshold = 8;
-  const visibleProjects = isHome
-    ? showAll
-      ? allProjects
-      : allProjects.slice(0, threshold)
-    : allProjects;
+  const visibleProjects = useMemo(() => {
+    return isHome
+      ? showAll
+        ? allProjects
+        : allProjects.slice(0, threshold)
+      : allProjects;
+  }, [isHome, showAll, allProjects]);
+
+  const handleToggle = useCallback(() => {
+    setShowAll(prev => !prev);
+  }, []);
 
   return (
     <section data-aos="fade-up" className="project section" id="project">
@@ -35,15 +41,15 @@ const Project = () => {
         <SectionTitle number={4}>Projects</SectionTitle>
         <div className="row">
           {visibleProjects.map((projectInfo, index) => (
-            <ProjectItem key={index} projectInfo={projectInfo} />
+            <ProjectItem key={projectInfo.id || index} projectInfo={projectInfo} />
           ))}
-          {isHome && (
+          {isHome && allProjects.length > threshold && (
             <div className="col-12">
               <ShowToggle
                 totalCount={allProjects.length}
                 threshold={threshold}
                 showAll={showAll}
-                onToggle={() => setShowAll(!showAll)}
+                onToggle={handleToggle}
                 className="text-center mt-4"
               />
             </div>
@@ -52,6 +58,8 @@ const Project = () => {
       </div>
     </section>
   );
-};
+});
+
+Project.displayName = 'Project';
 
 export default Project;

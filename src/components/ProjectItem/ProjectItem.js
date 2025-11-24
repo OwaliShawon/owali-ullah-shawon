@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import ExternalLink from '../common/ExternalLink';
 
 const getAcronym = (str = '') =>
@@ -8,8 +9,8 @@ const getAcronym = (str = '') =>
     .map((s) => s[0]?.toUpperCase() || '')
     .join('') || 'P';
 
-// Small, focused subcomponents kept in-file to avoid extra files while improving clarity
-const ProjectImage = ({ src, alt }) => {
+// Memoized subcomponents for better performance
+const ProjectImage = memo(({ src, alt }) => {
   if (!src) {
     return (
       <div className="project-thumb-placeholder" aria-label={`${alt || 'Project'} placeholder`}>
@@ -18,9 +19,11 @@ const ProjectImage = ({ src, alt }) => {
     );
   }
   return <img className="project-thumb" src={src} alt={alt} loading="lazy" />;
-};
+});
 
-const ProjectLinks = ({ demo, source, name }) => {
+ProjectImage.displayName = 'ProjectImage';
+
+const ProjectLinks = memo(({ demo, source, name }) => {
   if (!demo && !source) return null;
   return (
     <div className="links mt-2">
@@ -30,14 +33,14 @@ const ProjectLinks = ({ demo, source, name }) => {
             <ExternalLink
               className="ms-1"
               href={source}
-              title={`View ${name} source`}
-              aria-label={`View ${name} source`}
+              title={`View ${name} source code`}
+              aria-label={`View ${name} source code on GitHub`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -48,12 +51,16 @@ const ProjectLinks = ({ demo, source, name }) => {
         )}
         {demo && (
           <li>
-            <ExternalLink href={demo} title={`Open ${name} demo`} aria-label={`Open ${name} demo`}>
+            <ExternalLink 
+              href={demo} 
+              title={`Open ${name} live demo`} 
+              aria-label={`Open ${name} live demo`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -65,9 +72,11 @@ const ProjectLinks = ({ demo, source, name }) => {
       </ul>
     </div>
   );
-};
+});
 
-const TechList = ({ tools = [] }) => {
+ProjectLinks.displayName = 'ProjectLinks';
+
+const TechList = memo(({ tools = [] }) => {
   if (!tools.length) return null;
   return (
     <div className="tags-list">
@@ -78,9 +87,11 @@ const TechList = ({ tools = [] }) => {
       ))}
     </div>
   );
-};
+});
 
-const ProjectItem = ({ projectInfo }) => {
+TechList.displayName = 'TechList';
+
+const ProjectItem = memo(({ projectInfo }) => {
   // Normalize tools: prefer array; gracefully fall back to legacy tools1..tools10 if present
   const legacyTools = [
     projectInfo.tools1,
@@ -98,7 +109,7 @@ const ProjectItem = ({ projectInfo }) => {
 
   return (
     <div className="col-12 mb-4">
-      <div className="card surface-card project-card-horizontal p-3">
+      <article className="card surface-card project-card-horizontal p-3">
         <div className="row g-3 align-items-center">
           <div className="col-sm-4 col-md-3">
             <ProjectImage src={projectInfo.image} alt={projectInfo.name} />
@@ -107,35 +118,38 @@ const ProjectItem = ({ projectInfo }) => {
             <div className="card-body p-0">
               <div className="project-details">
                 {projectInfo.demo ? (
-                  <ExternalLink href={projectInfo.demo} title={`Open ${projectInfo.name} demo`}>
-                    <h5 className="card-title text-info mb-2">
+                  <ExternalLink 
+                    href={projectInfo.demo} 
+                    title={`Open ${projectInfo.name} demo`}
+                  >
+                    <h3 className="card-title text-info mb-2">
                       {projectInfo.name}
                       <span aria-hidden="true" className="ms-2 external-arrow">
                         ↗
                       </span>
-                    </h5>
+                    </h3>
                   </ExternalLink>
                 ) : (
-                  <h5 className="card-title text-info mb-2">{projectInfo.name}</h5>
+                  <h3 className="card-title text-info mb-2">{projectInfo.name}</h3>
                 )}
                 {projectInfo.description && (
                   <p className="card-text text-white mb-2">{projectInfo.description}</p>
                 )}
                 <TechList tools={tools} />
-                <div className="mt-2">
-                  <ProjectLinks
-                    demo={projectInfo.demo}
-                    source={projectInfo.source}
-                    name={projectInfo.name}
-                  />
-                </div>
+                <ProjectLinks
+                  demo={projectInfo.demo}
+                  source={projectInfo.source}
+                  name={projectInfo.name}
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
-};
+});
+
+ProjectItem.displayName = 'ProjectItem';
 
 export default ProjectItem;

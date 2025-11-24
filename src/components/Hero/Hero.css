@@ -1,33 +1,176 @@
-/* Hero section spacing */
+/* Modern Hero section with gradient and animations */
 .hero-banner {
-  padding: 100px 0 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(4rem, 10vh, 8rem) 0;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Overline above the main name */
+/* Animated background gradient orbs */
+.hero-banner::before,
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: float 20s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero-banner::before {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  top: -200px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.hero-banner::after {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-tertiary));
+  bottom: -150px;
+  right: -50px;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+}
+
+/* Ensure content is above animated background */
+.hero-banner > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Overline with modern styling */
 .intro-overline {
   color: var(--color-accent);
-  font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-/* Main name/title */
-.hero-title {
-  font-size: clamp(2rem, 6vw, 4rem);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Subtitle/role */
-.hero-subtitle {
-  font-size: clamp(1.25rem, 3.5vw, 2rem);
-  color: #aab4c0;
+  font-family: var(--font-display);
   font-weight: 600;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  display: inline-block;
+  position: relative;
+  padding-left: var(--space-xl);
 }
 
-/* Description paragraph */
+.intro-overline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: var(--space-lg);
+  height: 2px;
+  background: var(--color-accent);
+  transform: translateY(-50%);
+}
+
+/* Main hero title with gradient and animation */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-accent-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Subtitle with typing effect feel */
+.hero-subtitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+/* Hero description */
 .hero-description {
-  color: #d3dae4;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
   max-width: 60ch;
+  margin-bottom: var(--space-2xl);
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+/* Hero CTA buttons */
+.hero-cta {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating badge or social proof */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: rgba(26, 31, 58, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.hero-badge-icon {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: auto;
+    padding: clamp(6rem, 15vh, 10rem) 0 clamp(4rem, 10vh, 6rem);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .intro-overline {
+    padding-left: var(--space-lg);
+  }
+  
+  .intro-overline::before {
+    width: var(--space-md);
+  }
 }

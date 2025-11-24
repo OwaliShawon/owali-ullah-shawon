@@ -8,7 +8,11 @@
         {
           "title": "Software Engineer",
           "year": "July 2025 - Present",
-          "tasks": []
+          "tasks": [
+            "Working with a dynamic team to develop and maintain scalable backend services for ShebaPay, utilizing Node.js, NestJS, Express.js, MSSQL and MongoDB to ensure high performance and reliability.",
+            "Integrated multiple bank APIs enabling secure money transfer, cash-in, cash-out, and real-time transaction routing.",
+            
+          ]
         }
       ]
     },
@@ -19,7 +23,7 @@
       "roles": [
         {
           "title": "Software Engineer | Onsite",
-          "year": "Jan 2023 - May 2025",
+          "year": "Jan 2023 - June 2025",
           "tasks": [
             "Engineered a real‑time chat support application using Express.js, SocketIO, and MongoDB, enabling seamless user communication and improving platform engagement.",
             "Developed and maintained a secure transaction system supporting deposits, withdrawals, and account transfers across multiple currencies, ensuring data integrity and compliance with financial standards.",
@@ -40,7 +44,7 @@
       "roles": [
         {
           "title": "Software Engineer",
-          "year": "May 2022 - Nov 2022",
+          "year": "Nov 2021 - Dec 2022",
           "tasks": [
             "Developed and maintained core backend services for a comprehensive school management system, covering employees, teachers, guardians, and student data management.",
             "Built and optimized the material distribution module, enabling teachers to upload and share class materials with students securely and guardians.",
@@ -71,8 +75,8 @@
       "website": "https://www.linkedin.com/company/intigsol",
       "roles": [
         {
-          "title": "Software Developer & Software Developer (Trainee)",
-          "year": "July 2021 ‑ April 2022",
+          "title": "Software Developer (Trainee)",
+          "year": "July 2021 ‑ Oct 2022",
           "tasks": [
             "Worked on developing an e‑commerce platform utilizing React.js for the front end, Express for the back end, MySQL for database management, and Prisma for seamless database integration.",
             "Designed and developed static websites using HTML, CSS, JavaScript, and Reactjs, ensuring responsive layouts and optimal user experiences across devices.",
